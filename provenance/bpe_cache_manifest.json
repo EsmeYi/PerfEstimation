@@ -1,0 +1,50 @@
+{
+  "bpe_tokenizer_sha256": "92da63d5885cdf33090ee794abe8ace12f03c6f2110c6b9dbef208571d5771a8",
+  "ia_tokenizer_sha256": "413d66c3c1eb71ee2cb14615cfa6535bcc5b7630910ff80c3f4447d11c86dc49",
+  "bpe_vocab": 16384,
+  "ia_vocab": 254,
+  "max_sequence_length": 512,
+  "length_definition": "BOS + untruncated tokens + EOS",
+  "splits": {
+    "train": {
+      "count": 309913,
+      "record_id_sha256": "0c2d6b64b1e79fb42d2047260bd1040bfc7f9463e661ad6601ce7ab1cba10c5f",
+      "input_sha256": "e9d3461e61f85ca85426d0cc17fe90d62d192b91b61483e135502459e8775415",
+      "hash_scope": "full file",
+      "BPE": {
+        "mean": 584.6202869837664,
+        "median": 388.0,
+        "p95": 1676.0,
+        "max": 55630,
+        "fraction_truncated_at_512": 0.3660317572996292
+      },
+      "original_IA": {
+        "mean": 48.13343422186227,
+        "median": 30.0,
+        "p95": 153.0,
+        "max": 2257,
+        "fraction_truncated_at_512": 0.0019457073436738698
+      }
+    },
+    "test": {
+      "count": 2000,
+      "record_id_sha256": "af1cfacb2984e5c69e39e802bf02d1fa611f977d29eba91933b75093e6a8af6b",
+      "input_sha256": "078b88c23036473d6bd546b057e8220d6f2456335c169fcf77ec547aefe5442a",
+      "hash_scope": "first2000 records",
+      "BPE": {
+        "mean": 708.5165,
+        "median": 465.0,
+        "p95": 2026.049999999999,
+        "max": 20654,
+        "fraction_truncated_at_512": 0.4405
+      },
+      "original_IA": {
+        "mean": 62.5115,
+        "median": 37.0,
+        "p95": 198.14999999999986,
+        "max": 1065,
+        "fraction_truncated_at_512": 0.0055
+      }
+    }
+  }
+}

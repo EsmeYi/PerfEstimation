@@ -1,0 +1,13 @@
+{
+  "python": "3.11.15 (conda-forge)",
+  "packages": {
+    "torch": "2.5.1",
+    "numpy": "2.4.6",
+    "tokenizers": "0.22.2",
+    "transformers": "5.6.2",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "safetensors": "0.7.0"
+  },
+  "note": "Observed from final Berzelius environment; original runs span the recorded dates, and an environment freeze was not captured at each run."
+}

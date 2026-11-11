@@ -1,0 +1,35 @@
+{
+  "selection_source_sha256": "2c8003f731265cd6e739816846cf811b50547c15dc192e8b82cc4303a5f16de9",
+  "selection_rule": "highest fixed validation probe R2 after full-budget promotion; no test scores used",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "models": {
+    "IA": {
+      "model": "IA",
+      "trial_id": 7,
+      "target": "log1p",
+      "base_weight": 0.6,
+      "effective_lambda": 5.990544826588272,
+      "variance_calibration": 9.984241377647121,
+      "temperature": 0.05,
+      "label_smoothing": 0.05,
+      "batch_size": 256,
+      "target_steps": 9762
+    },
+    "BPE": {
+      "model": "BPE",
+      "trial_id": 15,
+      "target": "log1p",
+      "base_weight": 0.6,
+      "effective_lambda": 5.990544826588272,
+      "variance_calibration": 9.984241377647121,
+      "temperature": 0.05,
+      "label_smoothing": 0.05,
+      "batch_size": 256,
+      "target_steps": 9762
+    }
+  }
+}

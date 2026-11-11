@@ -1,0 +1,39 @@
+{
+  "model": "source_only",
+  "seed": 42,
+  "selection": "ablations use previously frozen full IA hyperparameters; no ablation tuning",
+  "frozen_configs_sha256": "59c26d5cb322c6441fcd2b00a593ae1e071c27278841adcb64618ccc7a2e0c38",
+  "tuned_config": {
+    "model": "IA",
+    "trial_id": 7,
+    "target": "log1p",
+    "base_weight": 0.6,
+    "effective_lambda": 5.990544826588272,
+    "variance_calibration": 9.984241377647121,
+    "temperature": 0.05,
+    "label_smoothing": 0.05,
+    "batch_size": 256,
+    "target_steps": 9762
+  },
+  "splits_reported_separately": true,
+  "n_probe_train": 5000,
+  "ablation": {
+    "validation": {
+      "probe_r2_log1p": 0.593134729950133,
+      "probe_r2_raw_ipc": 0.5993533022918516,
+      "probe_mae_ipc": 0.3692348007037416,
+      "direct_head_r2_raw_ipc": 0.594326901433452,
+      "n": 2000
+    },
+    "test": {
+      "probe_r2_log1p": 0.6234685020172721,
+      "probe_r2_raw_ipc": 0.6238099143657101,
+      "probe_mae_ipc": 0.36307752192436554,
+      "direct_head_r2_raw_ipc": 0.6037014774806856,
+      "n": 2000
+    }
+  },
+  "checkpoint_paths": {
+    "ablation": "/proj/berzelius-2026-145/users/x_liryi/supervision_ablations_20261027/runs/source_only_seed42/checkpoint.pt"
+  }
+}

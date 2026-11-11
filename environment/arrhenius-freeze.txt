@@ -1,0 +1,188 @@
+alabaster @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/alabaster/alabaster-1.0.0
+annotated-doc==0.0.5
+anyio==4.16.0
+appdirs @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/appdirs/appdirs-1.4.4
+asn1crypto @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/asn1crypto/asn1crypto-1.5.1
+atomicwrites @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/atomicwrites/atomicwrites-1.4.1
+attrs @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/attrs/attrs-25.3.0
+babel @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/Babel/babel-2.17.0
+backports.entry_points_selectable @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/backportsentrypointsselectable/backports.entry_points_selectable-1.3.0
+backports.functools_lru_cache @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/backportsfunctoolslrucache/backports.functools_lru_cache-2.0.0
+backports.zstd @ file:///scratch/local/bob/easybuild-build/pyzstd/0.19.0/GCCcore-14.3.0/backportszstd/backports_zstd-1.2.0
+beniget @ file:///tmp/rar/SciPybundle/2025.07/gfbf-2025b/beniget/beniget-0.4.2.post1
+bitarray @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/bitarray/bitarray-3.6.0
+bitstring @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/bitstring/bitstring-4.3.1
+Bottleneck @ file:///tmp/rar/SciPybundle/2025.07/gfbf-2025b/bottleneck/bottleneck-1.5.0
+CacheControl @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/CacheControl/cachecontrol-0.14.3
+cachy @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/cachy/cachy-0.3.0
+certifi @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/certifi/certifi-2025.7.14
+cffi @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/cffi/cffi-1.17.1
+chardet @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/chardet/chardet-5.2.0
+charset-normalizer @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/charsetnormalizer/charset_normalizer-3.4.2
+cleo @ file:///software/sse2/generic/easybuild/sources/p/Python-bundle-PyPI/extensions/cleo-2.1.0-py3-none-any.whl#sha256=4a31bd4dd45695a64ee3c4758f583f134267c2bc518d8ae9a29cf237d009b07e
+click==8.5.1
+cloudpickle @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/cloudpickle/cloudpickle-3.1.1
+colorama @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/colorama/colorama-0.4.6
+commonmark @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/commonmark/commonmark-0.9.1
+contourpy==1.4.0
+crashtest @ file:///software/sse2/generic/easybuild/sources/p/Python-bundle-PyPI/extensions/crashtest-0.4.1-py3-none-any.whl#sha256=8d23eac5fa660409f57472e3851dab7ac18aba459a8d19cbbba86d3d5aecd2a5
+cryptography @ file:///tmp/rar/cryptography/45.0.5/GCCcore-14.3.0/cryptography-45.0.5
+cycler==0.12.1
+deap @ file:///tmp/rar/SciPybundle/2025.07/gfbf-2025b/deap/deap-1.4.3
+decorator @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/decorator/decorator-5.2.1
+distlib @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/distlib/distlib-0.4.0
+distro @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/distro/distro-1.9.0
+docopt @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/docopt/docopt-0.6.2
+docutils @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/docutils/docutils-0.21.2
+doit @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/doit/doit-0.36.0
+dulwich @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/dulwich/dulwich-0.22.8
+ecdsa @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/ecdsa/ecdsa-0.19.1
+editables @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/editables/editables-0.5
+exceptiongroup @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/exceptiongroup/exceptiongroup-1.3.0
+execnet @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/execnet/execnet-2.1.1
+expecttest @ file:///scratch/local/bob/easybuild-build/expecttest/0.3.0/GCCcore-14.3.0/expecttest-0.3.0
+filelock @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/filelock/filelock-3.18.0
+flit_core @ file:///tmp/rar/Python/3.13.5/GCCcore-14.3.0/flit_core/flit_core-3.12.0
+fonttools==4.68.0
+fsspec @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/fsspec/fsspec-2025.7.0
+future @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/future/future-1.0.0
+gast @ file:///tmp/rar/SciPybundle/2025.07/gfbf-2025b/gast/gast-0.6.0
+glob2 @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/glob2/glob2-0.7
+gmpy2 @ file:///scratch/local/bob/easybuild-build/gmpy2/2.2.0/GCCcore-14.3.0/gmpy2-2.2.0
+h11==0.16.0
+hf-xet==1.8.0
+html5lib @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/html5lib/html5lib-1.1
+httpcore==1.0.9
+httpx==0.28.1
+huggingface_hub==1.33.0
+idna @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/idna/idna-3.10
+imagesize @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/imagesize/imagesize-1.4.1
+importlib_metadata @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/importlibmetadata/importlib_metadata-8.7.0
+importlib_resources @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/importlibresources/importlib_resources-6.5.2
+iniconfig @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/iniconfig/iniconfig-2.1.0
+intervaltree @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/intervaltree/intervaltree-3.1.0
+intreehooks @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/intreehooks/intreehooks-1.0
+ipaddress @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/ipaddress/ipaddress-1.0.23
+jaraco.classes @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/jaracoclasses/jaraco.classes-3.4.0
+jaraco.context @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/jaracocontext/jaraco_context-6.0.1
+jaraco.functools @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/jaracofunctools/jaraco_functools-4.2.1
+jeepney @ file:///software/sse2/generic/easybuild/sources/p/Python-bundle-PyPI/extensions/jeepney-0.9.0-py3-none-any.whl#sha256=97e5714520c16fc0a45695e5365a2e11b81ea79bba796e26f9f1d178cb182683
+Jinja2 @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/Jinja2/jinja2-3.1.6
+joblib @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/joblib/joblib-1.5.1
+jsonschema @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/jsonschema/jsonschema-4.25.0
+jsonschema-specifications @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/jsonschemaspecifications/jsonschema_specifications-2025.4.1
+keyring @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/keyring/keyring-25.6.0
+keyrings.alt @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/keyringsalt/keyrings_alt-5.0.2
+kiwisolver==1.5.1
+liac-arff @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/liacarff/liac-arff-2.5.0
+lockfile @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/lockfile/lockfile-0.12.2
+markdown-it-py @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/markdownitpy/markdown-it-py-3.0.0
+MarkupSafe @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/MarkupSafe/markupsafe-3.0.2
+matplotlib==3.10.9
+mdurl @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/mdurl/mdurl-0.1.2
+mock @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/mock/mock-5.2.0
+more-itertools @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/moreitertools/more_itertools-10.7.0
+mpi4py @ file:///tmp/rar/mpi4py/4.1.0/gompi-2025b/mpi4py/mpi4py-4.1.0
+mpmath @ file:///tmp/rar/SciPybundle/2025.07/gfbf-2025b/mpmath/mpmath-1.3.0
+msgpack @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/msgpack/msgpack-1.1.1
+narwhals==2.28.0
+netaddr @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/netaddr/netaddr-1.3.0
+netifaces @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/netifaces/netifaces-0.11.0
+networkx @ file:///tmp/rar/networkx/3.5/gfbf-2025b/networkx-3.5
+numexpr @ file:///tmp/rar/SciPybundle/2025.07/gfbf-2025b/numexpr/numexpr-2.11.0
+numpy==2.4.6
+packaging @ file:///tmp/rar/Python/3.13.5/GCCcore-14.3.0/packaging/packaging-25.0
+pandas @ file:///tmp/rar/SciPybundle/2025.07/gfbf-2025b/pandas/pandas-2.3.1
+pastel @ file:///software/sse2/generic/easybuild/sources/p/Python-bundle-PyPI/extensions/pastel-0.2.1-py2.py3-none-any.whl#sha256=4349225fcdf6c2bb34d483e523475de5bb04a5c10ef711263452cb37d7dd4364
+pathlib2 @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pathlib2/pathlib2-2.3.7.post1
+pathspec @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pathspec/pathspec-0.12.1
+pbr @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pbr/pbr-6.1.1
+pexpect @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pexpect/pexpect-4.9.0
+pillow @ file:///tmp/bob/Pillow/11.3.0/GCCcore-14.3.0/pillow-11.3.0
+pkginfo @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pkginfo/pkginfo-1.12.1.2
+platformdirs @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/platformdirs/platformdirs-4.3.8
+pluggy @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pluggy/pluggy-1.6.0
+ply @ file:///tmp/rar/SciPybundle/2025.07/gfbf-2025b/ply/ply-3.11
+pooch @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pooch/pooch-1.8.2
+protobuf @ file:///tmp/bob/protobufpython/6.31.1/GCCcore-14.3.0/protobuf-6.31.1
+psutil @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/psutil/psutil-7.0.0
+ptyprocess @ file:///software/sse2/generic/easybuild/sources/p/Python-bundle-PyPI/extensions/ptyprocess-0.7.0-py2.py3-none-any.whl#sha256=4b41f3967fce3af57cc7e94b888626c18bf37a083e3651ca8feeb66d492fef35
+PuLP @ file:///scratch/local/bob/easybuild-build/PuLP/3.3.0/foss-2025b/pulp-3.3.0
+py @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/py/py-1.11.0
+py_expression_eval @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pyexpressioneval/py_expression_eval-0.3.14
+pyasn1 @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pyasn1/pyasn1-0.6.1
+pybind11 @ file:///tmp/rar/pybind11/3.0.0/GCC-14.3.0/pybind11-3.0.0
+pycparser @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pycparser/pycparser-2.22
+pycryptodome @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pycryptodome/pycryptodome-3.23.0
+pydevtool @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pydevtool/pydevtool-0.3.0
+Pygments @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/Pygments/pygments-2.19.2
+pylev @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pylev/pylev-1.4.0
+PyNaCl @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/PyNaCl/PyNaCl-1.5.0
+pyparsing @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pyparsing/pyparsing-3.2.3
+pyrsistent @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pyrsistent/pyrsistent-0.20.0
+pytest @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pytest/pytest-8.4.1
+pytest-xdist @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pytestxdist/pytest_xdist-3.8.0
+python-dateutil @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pythondateutil/python-dateutil-2.9.0.post0
+pythran @ file:///tmp/rar/SciPybundle/2025.07/gfbf-2025b/pythran/pythran-0.18.0
+pytoml @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pytoml/pytoml-0.1.21
+pytz @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/pytz/pytz-2025.2
+PyYAML @ file:///tmp/bob/PyYAML/6.0.2/GCCcore-14.3.0/pyyaml-6.0.2
+pyzstd @ file:///scratch/local/bob/easybuild-build/pyzstd/0.19.0/GCCcore-14.3.0/pyzstd/pyzstd-0.19.0
+RapidFuzz @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/rapidfuzz/rapidfuzz-3.13.0
+referencing @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/referencing/referencing-0.36.2
+regex==2026.11.7
+requests @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/requests/requests-2.32.4
+requests-toolbelt @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/requeststoolbelt/requests-toolbelt-1.0.0
+rich @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/rich/rich-14.1.0
+rich-click @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/richclick/rich_click-1.8.9
+roman-numerals-py @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/romannumeralspy/roman_numerals_py-3.1.0
+rpds-py @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/rpdspy/rpds_py-0.26.0
+safetensors==0.7.0
+scandir @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/scandir/scandir-1.10.0
+scikit-learn==1.9.1
+scipy==1.17.1
+SecretStorage @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/SecretStorage/SecretStorage-3.3.3
+semantic_version @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/semanticversion/semantic_version-2.10.0
+setuptools @ file:///tmp/rar/Python/3.13.5/GCCcore-14.3.0/setuptools/setuptools-80.9.0
+setuptools-scm @ file:///tmp/rar/Python/3.13.5/GCCcore-14.3.0/setuptools_scm/setuptools_scm-8.3.1
+shellingham @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/shellingham/shellingham-1.5.4
+simplegeneric @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/simplegeneric/simplegeneric-0.8.1
+simplejson @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/simplejson/simplejson-3.20.1
+six @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/six/six-1.17.0
+snowballstemmer @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/snowballstemmer/snowballstemmer-3.0.1
+sortedcontainers @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/sortedcontainers/sortedcontainers-2.4.0
+Sphinx @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/Sphinx/sphinx-8.2.3
+sphinx-bootstrap-theme @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/sphinxbootstraptheme/sphinx-bootstrap-theme-0.8.1
+sphinxcontrib-applehelp @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/sphinxcontribapplehelp/sphinxcontrib_applehelp-2.0.0
+sphinxcontrib-devhelp @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/sphinxcontribdevhelp/sphinxcontrib_devhelp-2.0.0
+sphinxcontrib-htmlhelp @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/sphinxcontribhtmlhelp/sphinxcontrib_htmlhelp-2.1.0
+sphinxcontrib-jsmath @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/sphinxcontribjsmath/sphinxcontrib-jsmath-1.0.1
+sphinxcontrib-qthelp @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/sphinxcontribqthelp/sphinxcontrib_qthelp-2.0.0
+sphinxcontrib-serializinghtml @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/sphinxcontribserializinghtml/sphinxcontrib_serializinghtml-2.0.0
+sphinxcontrib-websupport @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/sphinxcontribwebsupport/sphinxcontrib_websupport-2.0.0
+sympy @ file:///scratch/local/bob/easybuild-build/sympy/1.14.0/gfbf-2025b/sympy-1.14.0
+tabulate @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/tabulate/tabulate-0.9.0
+threadpoolctl @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/threadpoolctl/threadpoolctl-3.6.0
+tokenizers==0.22.2
+toml @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/toml/toml-0.10.2
+tomli @ file:///tmp/rar/Python/3.13.5/GCCcore-14.3.0/tomli/tomli-2.2.1
+tomli_w @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/tomliw/tomli_w-1.2.0
+tomlkit @ file:///software/sse2/generic/easybuild/sources/p/Python-bundle-PyPI/extensions/tomlkit-0.13.3-py3-none-any.whl#sha256=c89c649d79ee40629a9fda55f8ace8c6a1b42deb912b2a8fd8d942ddadb606b0
+torch @ file:///scratch/local/bob/easybuild-build/PyTorch/2.9.1/foss-2025b-CUDA-12.9.1/pytorch-v2.9.1
+tqdm==4.70.1
+transformers==5.6.2
+triton @ file:///scratch/local/bob/easybuild-build/Triton/3.5.0/gfbf-2025b-CUDA-12.9.1/Triton/triton-3.5.0
+typer==0.28.0
+typing_extensions==4.16.0
+tzdata @ file:///tmp/rar/SciPybundle/2025.07/gfbf-2025b/tzdata/tzdata-2025.2
+ujson @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/ujson/ujson-5.10.0
+urllib3 @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/urllib3/urllib3-2.5.0
+versioneer @ file:///tmp/rar/SciPybundle/2025.07/gfbf-2025b/versioneer/versioneer-0.29
+virtualenv @ file:///tmp/rar/virtualenv/20.32.0/GCCcore-14.3.0/virtualenv/virtualenv-20.32.0
+wcwidth @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/wcwidth/wcwidth-0.2.13
+webencodings @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/webencodings/webencodings-0.5.1
+wheel @ file:///tmp/rar/Python/3.13.5/GCCcore-14.3.0/wheel/wheel-0.45.1
+xlrd @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/xlrd/xlrd-2.0.2
+z3-solver @ file:///tmp/bob/Z3/4.15.1/GCCcore-14.3.0/z3_solver/z3_solver-4.15.1.0
+zipfile36 @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/zipfile36/zipfile36-0.1.3
+zipp @ file:///tmp/rar/PythonbundlePyPI/2025.07/GCCcore-14.3.0/zipp/zipp-3.23.0

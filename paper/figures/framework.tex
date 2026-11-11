@@ -1,0 +1,70 @@
+% Concrete training example: train record 395, 8cc/extr_vector.c_max.c.
+% Original label and all four instructions are recorded in framework_example.json.
+\begin{tikzpicture}[font=\small,>=Latex,
+  flow/.style={->,line width=.65pt},
+  block/.style={draw=black!70,line width=.6pt,rounded corners=2pt,
+    align=center,text width=24mm,minimum height=12mm,inner sep=2mm},
+  code/.style={block,fill=black!2,text width=45mm,align=left},
+  encoder/.style={block,fill=blue!5},
+  target/.style={block,fill=orange!9,text width=28mm},
+  loss/.style={block,text width=28mm}]
+\node[anchor=west,font=\small\bfseries] at (0,5.42)
+  {(a) Joint training};
+
+\node[code,minimum height=19mm] (s) at (2.5,4.12) {
+  \normalfont\bfseries C source $S$\\[2pt]
+  \normalfont\ttfamily\footnotesize
+  static int max(int a, int b)\\
+  \{\\
+  \hspace*{1em}return a > b ? a : b;\\
+  \}
+};
+\node[encoder] (se) at (7,4.12)
+  {BPE tokenizer\\Source encoder\\$\mathbf{s}\in\mathbb{R}^{128}$};
+\node[block] (head) at (10.8,4.12)
+  {IPC head\\$\hat t=g(\mathbf{s})$};
+\node[loss] (reg) at (15,4.12)
+  {IPC loss $\mathcal{L}_{\mathrm{IPC}}$\\[2pt]
+   $\bigl(\hat t-\log(1+y)\bigr)^2$};
+\draw[flow] (s.east)--(se.west);
+\draw[flow] (se.east)--(head.west);
+\draw[flow] (head.east)--(reg.west);
+
+\node[code,minimum height=19mm] (a) at (2.5,1.65) {
+  \normalfont\bfseries Paired assembly $A$\\[2pt]
+  \normalfont\ttfamily\footnotesize
+  movl\hspace{1em}\%esi, \%eax\\
+  cmpl\hspace{1em}\%esi, \%edi\\
+  cmovgl \%edi, \%eax\\
+  retq
+};
+\node[encoder] (ae) at (7,1.65)
+  {IA tokenizer\\Assembly encoder\\$\mathbf{a}\in\mathbb{R}^{128}$};
+\node[target] (y) at (15,1.65)
+  {Static IPC label\\[2pt]$y=\mathbf{2.96}$};
+\draw[flow] (s.south)--node[right,font=\footnotesize]{Compile}(a.north);
+\draw[flow] (a.east)--(ae.west);
+\draw[<->,line width=.65pt] (se.south)--
+  node[right,align=left,font=\footnotesize]{Contrastive\\alignment $\mathcal{L}_{\mathrm{align}}$}(ae.north);
+\draw[flow] (y.north)--node[right,font=\footnotesize]{Target}(reg.south);
+\node[align=center,font=\small] at (10.8,1.65)
+  {Joint objective\\[3pt]
+   $\mathcal{L}=\mathcal{L}_{\mathrm{align}}+\lambda\mathcal{L}_{\mathrm{IPC}}$};
+\draw[flow] (a.south)--(2.5,.26)--
+  node[above,font=\footnotesize]{\texttt{llvm-mca}}(15,.26)--(y.south);
+
+\draw[black!35,line width=.5pt] (0,-.12)--(16.65,-.12);
+\node[anchor=west,font=\small\bfseries] at (0,-.58)
+  {(b) Source-only prediction};
+\node[code,align=center,minimum height=12mm] (q) at (2.5,-1.55)
+  {New C function $S$};
+\node[encoder] (f) at (7,-1.55)
+  {BPE tokenizer\\Frozen source encoder};
+\node[block] (r) at (10.8,-1.55)
+  {Ridge readout\\$\hat t=\mathbf{w}^{\top}\mathbf{s}+b$};
+\node[target] (out) at (15,-1.55)
+  {Estimated IPC\\$\hat y=\exp(\hat t)-1$};
+\draw[flow] (q.east)--(f.west);
+\draw[flow] (f.east)--(r.west);
+\draw[flow] (r.east)--(out.west);
+\end{tikzpicture}

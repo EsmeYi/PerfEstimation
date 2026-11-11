@@ -1,0 +1,290 @@
+{
+  "protocol": {
+    "created": "2026-11-08",
+    "models": [
+      "codebert",
+      "unixcoder"
+    ],
+    "conditions": [
+      "ipc",
+      "joint"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_n": 309913,
+    "updates": 9762,
+    "batch": 256,
+    "microbatch": 16,
+    "equivalent_epochs": 8.06378564306757,
+    "target": "log1p IPC",
+    "source_representation": "native tokenizer, masked-mean768; source architecture unchanged between conditions",
+    "readout": "frozen768, fixed5000 Ridge alpha1, no standardization, float32 embeddings and float64 solve",
+    "learning_rates": [
+      1e-05,
+      2e-05,
+      5e-05
+    ],
+    "alignment_weights": [
+      0.03,
+      0.16692972491610897,
+      1.0
+    ],
+    "selection": "seed42 IPC LR screen2000, top2continue9762; choosefull-budgetvalidation winner; share sourceLR withjoint. Jointweight screen2000,top2continue9762; freeze full-budgetvalidation winner. No test until final configs frozen.",
+    "screen_steps": 2000,
+    "scheduler": "200update warmup; cosine horizon10000, floor.1; identical to compact-model schedule; screen/full share same horizon for exact continuation",
+    "optimizer": "AdamW allparameters same selectedLR,weight_decay.01; globalclip.5",
+    "precision": "bf16 training, float32 alignment scores; same exact fullbatch gradient-cache implementation for both conditions",
+    "alignment": "correctedIA254 assemblyEncoder4layers256hidden->128; training-only source768->128 linearprojection; symmetric full256 InfoNCE,tau.05,label_smoothing.05",
+    "fresh_pretrained_initialization": true,
+    "resume_only_within_same_candidate": true,
+    "probe_indices_sha256": "ff62f51865a9c3e52507f2d4744ac8a8703265179030ebf5b639b83a847cf0d6",
+    "test_n": 2000,
+    "validation_n": 2000,
+    "gpu": "Arrhenius GH200",
+    "environment": "ARM Python3.13.5,PyTorch2.9.1, recorded existing Arrhenius env",
+    "preserve_historical_30min_runs": true
+  },
+  "summary": {
+    "codebert_ipc": {
+      "probe_r2_log1p": {
+        "mean": 0.8597300733379086,
+        "sample_sd": 0.005224670531543806
+      },
+      "probe_r2_raw_ipc": {
+        "mean": 0.8695441248412314,
+        "sample_sd": 0.005140700708858957
+      },
+      "probe_mae_ipc": {
+        "mean": 0.1954776236816744,
+        "sample_sd": 0.0048333684488048485
+      }
+    },
+    "codebert_joint": {
+      "probe_r2_log1p": {
+        "mean": 0.8759027394559463,
+        "sample_sd": 0.006856415014529574
+      },
+      "probe_r2_raw_ipc": {
+        "mean": 0.8873585565872003,
+        "sample_sd": 0.007027898323033053
+      },
+      "probe_mae_ipc": {
+        "mean": 0.1884073310662252,
+        "sample_sd": 0.0039201595609766535
+      }
+    },
+    "unixcoder_ipc": {
+      "probe_r2_log1p": {
+        "mean": 0.8897921083277812,
+        "sample_sd": 0.004373992687913108
+      },
+      "probe_r2_raw_ipc": {
+        "mean": 0.8957922847842527,
+        "sample_sd": 0.004320363766860536
+      },
+      "probe_mae_ipc": {
+        "mean": 0.17656232367885452,
+        "sample_sd": 0.0025959448127912147
+      }
+    },
+    "unixcoder_joint": {
+      "probe_r2_log1p": {
+        "mean": 0.8912040825007601,
+        "sample_sd": 0.00211282409080698
+      },
+      "probe_r2_raw_ipc": {
+        "mean": 0.8946762572773302,
+        "sample_sd": 0.0022429355374899164
+      },
+      "probe_mae_ipc": {
+        "mean": 0.17960375511700344,
+        "sample_sd": 0.002421227112605899
+      }
+    }
+  },
+  "per_seed": [
+    {
+      "model": "codebert",
+      "kind": "ipc",
+      "seed": 42,
+      "lr": 5e-05,
+      "alignment_weight": 0.0,
+      "step": 9762,
+      "training_seconds": 7385.844670813996,
+      "probe_r2_log1p": 0.8645328540797602,
+      "probe_r2_raw_ipc": 0.8749034613655466,
+      "probe_mae_ipc": 0.1910690379415583,
+      "direct_head_r2_raw_ipc": 0.8205728466627531,
+      "n": 2000
+    },
+    {
+      "model": "codebert",
+      "kind": "ipc",
+      "seed": 43,
+      "lr": 5e-05,
+      "alignment_weight": 0.0,
+      "step": 9762,
+      "training_seconds": 6750.780184840027,
+      "probe_r2_log1p": 0.8541668551692594,
+      "probe_r2_raw_ipc": 0.8646542670414055,
+      "probe_mae_ipc": 0.20064582096836533,
+      "direct_head_r2_raw_ipc": 0.845758949430012,
+      "n": 2000
+    },
+    {
+      "model": "codebert",
+      "kind": "ipc",
+      "seed": 44,
+      "lr": 5e-05,
+      "alignment_weight": 0.0,
+      "step": 9762,
+      "training_seconds": 6555.135904577037,
+      "probe_r2_log1p": 0.8604905107647065,
+      "probe_r2_raw_ipc": 0.8690746461167421,
+      "probe_mae_ipc": 0.19471801213509957,
+      "direct_head_r2_raw_ipc": 0.8461247417742082,
+      "n": 2000
+    },
+    {
+      "model": "codebert",
+      "kind": "joint",
+      "seed": 42,
+      "lr": 5e-05,
+      "alignment_weight": 0.03,
+      "step": 9762,
+      "training_seconds": 8902.80719859997,
+      "probe_r2_log1p": 0.8823089552780808,
+      "probe_r2_raw_ipc": 0.8943830665445714,
+      "probe_mae_ipc": 0.18522887053509007,
+      "direct_head_r2_raw_ipc": 0.8716429237214128,
+      "n": 2000
+    },
+    {
+      "model": "codebert",
+      "kind": "joint",
+      "seed": 43,
+      "lr": 5e-05,
+      "alignment_weight": 0.03,
+      "step": 9762,
+      "training_seconds": 10017.752508734004,
+      "probe_r2_log1p": 0.8767283690619733,
+      "probe_r2_raw_ipc": 0.8873653284246938,
+      "probe_mae_ipc": 0.18720538013514346,
+      "direct_head_r2_raw_ipc": 0.8783201532876128,
+      "n": 2000
+    },
+    {
+      "model": "codebert",
+      "kind": "joint",
+      "seed": 44,
+      "lr": 5e-05,
+      "alignment_weight": 0.03,
+      "step": 9762,
+      "training_seconds": 8783.770417541964,
+      "probe_r2_log1p": 0.868670894027785,
+      "probe_r2_raw_ipc": 0.8803272747923359,
+      "probe_mae_ipc": 0.1927877425284421,
+      "direct_head_r2_raw_ipc": 0.8698501113904802,
+      "n": 2000
+    },
+    {
+      "model": "unixcoder",
+      "kind": "ipc",
+      "seed": 42,
+      "lr": 5e-05,
+      "alignment_weight": 0.0,
+      "step": 9762,
+      "training_seconds": 6405.1145150890225,
+      "probe_r2_log1p": 0.888497248781147,
+      "probe_r2_raw_ipc": 0.894829269885681,
+      "probe_mae_ipc": 0.17747148260967294,
+      "direct_head_r2_raw_ipc": 0.8908105952408171,
+      "n": 2000
+    },
+    {
+      "model": "unixcoder",
+      "kind": "ipc",
+      "seed": 43,
+      "lr": 5e-05,
+      "alignment_weight": 0.0,
+      "step": 9762,
+      "training_seconds": 6575.551695038972,
+      "probe_r2_log1p": 0.886211735350285,
+      "probe_r2_raw_ipc": 0.8920346891672227,
+      "probe_mae_ipc": 0.17858140587178556,
+      "direct_head_r2_raw_ipc": 0.8860153069453748,
+      "n": 2000
+    },
+    {
+      "model": "unixcoder",
+      "kind": "ipc",
+      "seed": 44,
+      "lr": 5e-05,
+      "alignment_weight": 0.0,
+      "step": 9762,
+      "training_seconds": 8154.093765428988,
+      "probe_r2_log1p": 0.8946673408519117,
+      "probe_r2_raw_ipc": 0.9005128952998543,
+      "probe_mae_ipc": 0.17363408255510512,
+      "direct_head_r2_raw_ipc": 0.8890543440343712,
+      "n": 2000
+    },
+    {
+      "model": "unixcoder",
+      "kind": "joint",
+      "seed": 42,
+      "lr": 5e-05,
+      "alignment_weight": 0.16692972491610897,
+      "step": 9762,
+      "training_seconds": 8298.619461126975,
+      "probe_r2_log1p": 0.8923432563011151,
+      "probe_r2_raw_ipc": 0.8955707523614713,
+      "probe_mae_ipc": 0.1792545812261886,
+      "direct_head_r2_raw_ipc": 0.887434989299583,
+      "n": 2000
+    },
+    {
+      "model": "unixcoder",
+      "kind": "joint",
+      "seed": 43,
+      "lr": 5e-05,
+      "alignment_weight": 0.16692972491610897,
+      "step": 9762,
+      "training_seconds": 8636.743946111004,
+      "probe_r2_log1p": 0.8925028472613074,
+      "probe_r2_raw_ipc": 0.8963339251097275,
+      "probe_mae_ipc": 0.17737607252584803,
+      "direct_head_r2_raw_ipc": 0.888462080106311,
+      "n": 2000
+    },
+    {
+      "model": "unixcoder",
+      "kind": "joint",
+      "seed": 44,
+      "lr": 5e-05,
+      "alignment_weight": 0.16692972491610897,
+      "step": 9762,
+      "training_seconds": 8662.514003926015,
+      "probe_r2_log1p": 0.8887661439398579,
+      "probe_r2_raw_ipc": 0.892124094360792,
+      "probe_mae_ipc": 0.1821806115989737,
+      "direct_head_r2_raw_ipc": 0.889905959372141,
+      "n": 2000
+    }
+  ],
+  "paired_joint_minus_ipc_r2": {
+    "codebert": [
+      0.017776101198320626,
+      0.02256151389271388,
+      0.008180383263078461
+    ],
+    "unixcoder": [
+      0.0038460075199681087,
+      0.0062911119110223845,
+      -0.005901196912053819
+    ]
+  }
+}

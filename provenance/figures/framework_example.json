@@ -1,0 +1,25 @@
+{
+  "purpose": "Concrete training triplet illustrating the framework; not selected using prediction error.",
+  "selection": "Short self-contained integer comparison function with four assembly instructions, chosen for diagram readability.",
+  "source_partition": "train",
+  "record_index_zero_based": 395,
+  "source_path": "/Users/lirongy/Downloads/alvis_dl4nlp_backup/dl4nlp_crossmodal/train.jsonl",
+  "raw_record_sha256": "f790c34081c6124eacb0629c0a9bc716983a02d22bf9130f6dbd5dccededfb4e",
+  "record": {
+    "id": "8cc/extr_vector.c_max.c",
+    "source": "#define NULL ((void*)0)\ntypedef unsigned long size_t;  // Customize by platform.\ntypedef long intptr_t; typedef unsigned long uintptr_t;\ntypedef long scalar_t__;  // Either arithmetic or pointer type.\n/* By default, we understand bool (as a convenience). */\ntypedef int bool;\n#define false 0\n#define true 1\n\n/* Forward declarations */\n\n/* Type definitions */\n\n/* Variables and functions */\n\n__attribute__((used)) static int max(int a, int b) {\n    return a > b ? a : b;\n}",
+    "asm": "\t.text\n\t.file\t\"extr_vector.c_max.c\"\n\t.p2align\t4, 0x90                         # -- Begin function max\n\t.type\tmax,@function\nmax:                                    # @max\n\t.cfi_startproc\n# %bb.0:\n\tmovl\t%esi, %eax\n\tcmpl\t%esi, %edi\n\tcmovgl\t%edi, %eax\n\tretq\n.Lfunc_end0:\n\t.size\tmax, .Lfunc_end0-max\n\t.cfi_endproc\n                                        # -- End function\n\t.ident\t\"Ubuntu clang version 18.1.8 (++20240731024944+3b5b5c1ec4a3-1~exp1~20240731145000.144)\"\n\t.section\t\".note.GNU-stack\",\"\",@progbits\n",
+    "total_cycles": 135,
+    "block_rthroughput": 1.0,
+    "ipc": 2.96,
+    "ir_O3": "define internal noundef i32 @max(i32 noundef %0, i32 noundef %1) #0 {\n  %3 = tail call i32 @llvm.smax.i32(i32 %0, i32 %1)\n  ret i32 %3\n}\ndeclare i32 @llvm.smax.i32(i32, i32) #1",
+    "ir": "define internal noundef i32 @max(i32 noundef %0, i32 noundef %1) #0 {\n  %3 = tail call i32 @llvm.smax.i32(i32 %0, i32 %1)\n  ret i32 %3\n}\ndeclare i32 @llvm.smax.i32(i32, i32) #1"
+  },
+  "display_changes": [
+    "Omit source boilerplate and __attribute__((used)); retain static declaration and function body.",
+    "Omit assembler labels, directives, and comments; retain all four instructions.",
+    "Use the original recorded static IPC label 2.96; no new llvm-mca invocation or predicted numeric value."
+  ],
+  "figure_source": "figures/framework.tex",
+  "units": "instructions per simulated cycle, under the recorded corpus configuration"
+}

@@ -1,0 +1,702 @@
+[
+  {
+    "source": "/Users/lirongy/papers/revision/paper/main.tex",
+    "package": "paper/main.tex",
+    "sha256": "2a02942acb2a48fe1a46ee81587de6c4b4acc5b5d4f6f976b1af032bd74f3df5"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/paper/main.pdf",
+    "package": "paper/main.pdf",
+    "sha256": "c0d550b0d3f48bd4101a317f6722c6fe2d5dba14c89a9da2ad051dea1d82d67c"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/paper/figures/ablation_prediction.pdf",
+    "package": "paper/figures/ablation_prediction.pdf",
+    "sha256": "014ff38b4e1c8e5ea0a6166bd9c9e98adda7852b23e3a88d3f31b2f2c543227c"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/paper/figures/ablation_prediction.png",
+    "package": "paper/figures/ablation_prediction.png",
+    "sha256": "573b142e63819a22cadec02cd651cb3546f9c5d7cbef97ef02aecb1b25abed12"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/paper/figures/framework.pdf",
+    "package": "paper/figures/framework.pdf",
+    "sha256": "48a5a3e979d383eee9167dcdef55d8bf51f28c2a0f6ef2c5f80f026f8e9b81dc"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/paper/figures/framework.png",
+    "package": "paper/figures/framework.png",
+    "sha256": "c440381c5a3e22b4c76c55fd1b1443bcd9727033434ea0ae112dd5a609f98808"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/paper/figures/framework.tex",
+    "package": "paper/figures/framework.tex",
+    "sha256": "462317ef38b924f5713c5bdda3d39a7569586c1b3986f08fa1fd4bbb37442a97"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/paper/figures/prediction_comparison.pdf",
+    "package": "paper/figures/prediction_comparison.pdf",
+    "sha256": "6b1dc714b512bfe4a3566ced1ee1d38eb34d16c6d410ceb80662f44c4dc5b4d3"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/paper/figures/prediction_comparison.png",
+    "package": "paper/figures/prediction_comparison.png",
+    "sha256": "1d49212dd15611a09f9c3d4a6e6eb30e127b495ed752b42ac3a42865c02fc29d"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ispass_draft/figures/framework_example.json",
+    "package": "provenance/figures/framework_example.json",
+    "sha256": "9dd37ce75249efa64aeee485ca8c45d0645e0e7b1be819a15cd4e29dde1b56cd"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ispass_draft/figures/prediction_manifest.json",
+    "package": "provenance/figures/prediction_manifest.json",
+    "sha256": "e747b708e5d9addf01f23e35ab1420c7e91577235337e827e14e2bc20a5eb1d9"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ispass_draft/figures/ablation_prediction_manifest.json",
+    "package": "provenance/figures/ablation_prediction_manifest.json",
+    "sha256": "a8ba5a57b8709b192803aedea555e16c084c8094f97e26a936f9f8ff8ee8df8e"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed42/tuned_test_predictions.csv",
+    "package": "results/joint/IA_seed42/tuned_test_predictions.csv",
+    "sha256": "c71023091217001323d79c8d85ba8ec5b2896082453a7aa13119d8d851ce4e21"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed42/tuned_validation_predictions.csv",
+    "package": "results/joint/IA_seed42/tuned_validation_predictions.csv",
+    "sha256": "f26d2591864b6d4378346cfe28d97f7785d215d68cea56d1c2357fd0c3179e00"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed42/metrics.json",
+    "package": "results/joint/IA_seed42/metrics.json",
+    "sha256": "370e08debed23e9d6e29dd8b7f87398ba4eb38ad42394e289375dd6a8f502c8f"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed43/tuned_test_predictions.csv",
+    "package": "results/joint/IA_seed43/tuned_test_predictions.csv",
+    "sha256": "143e4e3d444397ffb1d282d7597e3fbf5c17a1e9e2aad1abd96d9d95896722e8"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed43/tuned_validation_predictions.csv",
+    "package": "results/joint/IA_seed43/tuned_validation_predictions.csv",
+    "sha256": "b211088b3643f1881c4457be2c4e1951a862e1ad74faad4848d61e691e158f5d"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed43/metrics.json",
+    "package": "results/joint/IA_seed43/metrics.json",
+    "sha256": "1bfdc71f499503ce6a0b657fee7b7ab2b4be33616cae298838ff302e794b46b6"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed44/tuned_test_predictions.csv",
+    "package": "results/joint/IA_seed44/tuned_test_predictions.csv",
+    "sha256": "b80d3de9520a16b90295f21e95a85b47314e5572793830820cb198ae026c5f92"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed44/tuned_validation_predictions.csv",
+    "package": "results/joint/IA_seed44/tuned_validation_predictions.csv",
+    "sha256": "ff1f6311d551aa7cfff921b56010bd91c3d1f8593da9c7d0e7a3e1cf86b311d8"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed44/metrics.json",
+    "package": "results/joint/IA_seed44/metrics.json",
+    "sha256": "3a75813ba65b4abaa06064110ce05b53bfa81d3a6020b09a0190058764c6dcea"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/BPE_seed42/tuned_test_predictions.csv",
+    "package": "results/joint/BPE_seed42/tuned_test_predictions.csv",
+    "sha256": "93483c059fba019b488fe72cf2a9b951a3ce16500cfcefa9ab61934ac44b0edf"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/BPE_seed42/tuned_validation_predictions.csv",
+    "package": "results/joint/BPE_seed42/tuned_validation_predictions.csv",
+    "sha256": "ca5b1b0ee845effa82b61c12f795d5ba3294b7958c3bdd5e51c23ba2ab37272a"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/BPE_seed42/metrics.json",
+    "package": "results/joint/BPE_seed42/metrics.json",
+    "sha256": "af95ab373e646077e5340b568caa7139e5f1cd85fe1a8701f6517f5c376802fe"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/BPE_seed43/tuned_test_predictions.csv",
+    "package": "results/joint/BPE_seed43/tuned_test_predictions.csv",
+    "sha256": "d5e8bfa9954714b02d320b18a1fa9c52c5b29ca323b2c8acde3fb5dc396727be"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/BPE_seed43/tuned_validation_predictions.csv",
+    "package": "results/joint/BPE_seed43/tuned_validation_predictions.csv",
+    "sha256": "8368f36a8743984714591c4bded3cc7acd43493eabef5ff0fbc0a592d7192cf1"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/BPE_seed43/metrics.json",
+    "package": "results/joint/BPE_seed43/metrics.json",
+    "sha256": "ac5d1e4b511ccb1bd6860ecf6986e8ae887e2e82e8b48b61171b443c6929d0fa"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/BPE_seed44/tuned_test_predictions.csv",
+    "package": "results/joint/BPE_seed44/tuned_test_predictions.csv",
+    "sha256": "4a59e0af060fd813fabc9a98daba865227445c4ee02ea5791ad4a5c1bf4e08ba"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/BPE_seed44/tuned_validation_predictions.csv",
+    "package": "results/joint/BPE_seed44/tuned_validation_predictions.csv",
+    "sha256": "17816fe79d1cf19db43b4b894c06a2ecd31f3933abc4fd06a0fcb2abfaf2fc29"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/BPE_seed44/metrics.json",
+    "package": "results/joint/BPE_seed44/metrics.json",
+    "sha256": "59b5ef5e39e37e4c8a3766add8c7ff7c2d500140f011645a62204d6dfc654d5d"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/source_only_seed42/ablation_test_predictions.csv",
+    "package": "results/supervision/source_only_seed42/ablation_test_predictions.csv",
+    "sha256": "1e7927a38a7e995cd4f4c7816bad6b0fdaa018a711514308bc87983d1f516a50"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/source_only_seed42/ablation_validation_predictions.csv",
+    "package": "results/supervision/source_only_seed42/ablation_validation_predictions.csv",
+    "sha256": "278f1523bbf2ded887026302fd52880b5f6e3a88843fed6cf3955113ff70cb06"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/source_only_seed42/metrics.json",
+    "package": "results/supervision/source_only_seed42/metrics.json",
+    "sha256": "d2d1777d3d3f910b9fdc8a4ecfec544c8656f090231fd871f4b69eba50746670"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/source_only_seed43/ablation_test_predictions.csv",
+    "package": "results/supervision/source_only_seed43/ablation_test_predictions.csv",
+    "sha256": "0a8adeda0c962b845f48ff2f6c4c4c3124a7cae05c6c41be31d5c01a2f0af8d7"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/source_only_seed43/ablation_validation_predictions.csv",
+    "package": "results/supervision/source_only_seed43/ablation_validation_predictions.csv",
+    "sha256": "e81201b0d0327bb8ee5d6f8350aa843e208f0514f41e761a4fbefac986b15cbc"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/source_only_seed43/metrics.json",
+    "package": "results/supervision/source_only_seed43/metrics.json",
+    "sha256": "af742505b14688bca843e4f60abdaf303bd4ad317b011a3df57ae1306d47f7f1"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/source_only_seed44/ablation_test_predictions.csv",
+    "package": "results/supervision/source_only_seed44/ablation_test_predictions.csv",
+    "sha256": "20d694156b0745b48093f6450af998ec78ef686a76c36516ce00cbd529ede94e"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/source_only_seed44/ablation_validation_predictions.csv",
+    "package": "results/supervision/source_only_seed44/ablation_validation_predictions.csv",
+    "sha256": "e9ffabdb14e1bca5aef5e2a4ef3e70a9ab021e50626f743af6ffba96a577d6e7"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/source_only_seed44/metrics.json",
+    "package": "results/supervision/source_only_seed44/metrics.json",
+    "sha256": "0c14aa9f16aa8a002bcaada7723513b7416d61356e949707a004d8d2616ee95e"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/alignment_only_seed42/ablation_test_predictions.csv",
+    "package": "results/supervision/alignment_only_seed42/ablation_test_predictions.csv",
+    "sha256": "ef0f147e5639d8b43cc849aea0d0fa299213c0e5177512b48522f13b85adc67a"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/alignment_only_seed42/ablation_validation_predictions.csv",
+    "package": "results/supervision/alignment_only_seed42/ablation_validation_predictions.csv",
+    "sha256": "4d48e9466382fdb2e46f786724e7a7e12080069fb9440a9a937c187906265b97"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/alignment_only_seed42/metrics.json",
+    "package": "results/supervision/alignment_only_seed42/metrics.json",
+    "sha256": "b0ee9d455707fa9342831b3ce4ddc1747acfac05e3f528f90c356be0d0bdd552"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/alignment_only_seed43/ablation_test_predictions.csv",
+    "package": "results/supervision/alignment_only_seed43/ablation_test_predictions.csv",
+    "sha256": "bd0f20191fd365a831ccaf772ede855a99adf45480d6ca3933f1dae241e04c67"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/alignment_only_seed43/ablation_validation_predictions.csv",
+    "package": "results/supervision/alignment_only_seed43/ablation_validation_predictions.csv",
+    "sha256": "128330dd695d60bb498e5b72bc848ab6b24e094a78116265d6f888ff693f3b87"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/alignment_only_seed43/metrics.json",
+    "package": "results/supervision/alignment_only_seed43/metrics.json",
+    "sha256": "50e5feb255896b2925cbf7435878383070f31561307d88881af961c10f922ea4"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/alignment_only_seed44/ablation_test_predictions.csv",
+    "package": "results/supervision/alignment_only_seed44/ablation_test_predictions.csv",
+    "sha256": "7313798428f095af5fe5cfd1ad367ee2b1228e2894c16597f806db07a7780b1a"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/alignment_only_seed44/ablation_validation_predictions.csv",
+    "package": "results/supervision/alignment_only_seed44/ablation_validation_predictions.csv",
+    "sha256": "696afa4e2ab3c4af96e5ba7eae7237043404b8daf2b7cfdb91bc133c550b1370"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/alignment_only_seed44/metrics.json",
+    "package": "results/supervision/alignment_only_seed44/metrics.json",
+    "sha256": "d1f27e6b4a2275cb0147dc394837bd43e23ef8851635df99f0f7438b2edf38e5"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed42/test_predictions.csv",
+    "package": "results/pretrained/codebert_seed42/test_predictions.csv",
+    "sha256": "e53d972379aa42612ae4352669e0acd9e890f1cc81455b42bbe05d9df4a5e0ac"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed42/val_predictions.csv",
+    "package": "results/pretrained/codebert_seed42/val_predictions.csv",
+    "sha256": "3b7e9b3ad09e2ebff43cf0f35790614dd544c14fc210ac48b657dc4714c43c1d"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed42/test_metrics.json",
+    "package": "results/pretrained/codebert_seed42/test_metrics.json",
+    "sha256": "55efefbb0270ce4cddffb69bad3ed64412e2bc544b5289db9d73d24dd82c29c1"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed42/validation_metrics.json",
+    "package": "results/pretrained/codebert_seed42/validation_metrics.json",
+    "sha256": "ba3766ac4f464c872a19de9676925c31545b5df30767e9b4c04f12f154e2a5a3"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed42/config.json",
+    "package": "results/pretrained/codebert_seed42/config.json",
+    "sha256": "fa1f1ae38b6954fe3301998e809b42d84adbcbba44a63c0337db228de1ccaf31"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed42/status.json",
+    "package": "results/pretrained/codebert_seed42/status.json",
+    "sha256": "19084e9c87346e7defc0ab4d5d636d9d54a828da78e0e9972c5088448f93090e"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed43/test_predictions.csv",
+    "package": "results/pretrained/codebert_seed43/test_predictions.csv",
+    "sha256": "4db982a6fbf5603dc6891c9cbdf9eba11dcfc0f8ba02ab709deaf00632797503"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed43/val_predictions.csv",
+    "package": "results/pretrained/codebert_seed43/val_predictions.csv",
+    "sha256": "c3222de9274e0a4052072c0a32d27852521389aa3545ae07d842df6f06d42b05"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed43/test_metrics.json",
+    "package": "results/pretrained/codebert_seed43/test_metrics.json",
+    "sha256": "8808f8f9163224bfec86d4cb0f108e26d5e9ab2dcc83a17c84406cb0ffb10a96"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed43/validation_metrics.json",
+    "package": "results/pretrained/codebert_seed43/validation_metrics.json",
+    "sha256": "7fcf206ee372346444594d9b737cf13449f15ca188cafebdc7468763852c8f1f"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed43/config.json",
+    "package": "results/pretrained/codebert_seed43/config.json",
+    "sha256": "6ddc23b92aada77a34967aad099c3dea99da1f9cc42219a53f06f8423105b028"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed43/status.json",
+    "package": "results/pretrained/codebert_seed43/status.json",
+    "sha256": "ae60e8c493e9dd0ff27fa36b134c5f38c604b24674c5a3d88eb031726b435a14"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed44/test_predictions.csv",
+    "package": "results/pretrained/codebert_seed44/test_predictions.csv",
+    "sha256": "132d0b2862fd9e32853e72ab077d9e781faf60b3549b6052fb251fc0d461a7d5"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed44/val_predictions.csv",
+    "package": "results/pretrained/codebert_seed44/val_predictions.csv",
+    "sha256": "c76210a5db117523fe2d5bfcd13b704d0edf7d3bdbc0ea30e0075b32fd4c9654"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed44/test_metrics.json",
+    "package": "results/pretrained/codebert_seed44/test_metrics.json",
+    "sha256": "d8d7c314ef8bbb725e63cc8f6392baeeba876de2b4d791b1b30cde60acd35964"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed44/validation_metrics.json",
+    "package": "results/pretrained/codebert_seed44/validation_metrics.json",
+    "sha256": "9692a02ecae6b0f8c83074784be682bd4967cb0a761802bde7e43fc8d2f66ef6"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed44/config.json",
+    "package": "results/pretrained/codebert_seed44/config.json",
+    "sha256": "4195e9cc949f89f84fac1c19b4bb9a5eea67df0049946d79d5d0d6111bc17c96"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed44/status.json",
+    "package": "results/pretrained/codebert_seed44/status.json",
+    "sha256": "1f10da70e3a51f58eede43771ed2619dd576b4062047b5006b5bfa73d6a8a7dc"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed42/test_predictions.csv",
+    "package": "results/pretrained/unixcoder_seed42/test_predictions.csv",
+    "sha256": "111294162e661a967b17458452da6d430b5101572d63c5db3fadacd085a78583"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed42/val_predictions.csv",
+    "package": "results/pretrained/unixcoder_seed42/val_predictions.csv",
+    "sha256": "2cb11ef75ef69b2db4a992092664641746b2d7e48d01711b79705fc52f5bbc76"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed42/test_metrics.json",
+    "package": "results/pretrained/unixcoder_seed42/test_metrics.json",
+    "sha256": "11757229dabc6acfd0da6b025411823c0d2d3a71b466239b2ae2df9750304f4e"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed42/validation_metrics.json",
+    "package": "results/pretrained/unixcoder_seed42/validation_metrics.json",
+    "sha256": "f8b72e2d96fb7a4aaf58961a5662d38370718e042764bb90d5cc0d6de93c5154"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed42/config.json",
+    "package": "results/pretrained/unixcoder_seed42/config.json",
+    "sha256": "f775b6b76f55b6a789c66dc11a1c6fff40aadafd7e50ce869060e53e4a0d9838"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed42/status.json",
+    "package": "results/pretrained/unixcoder_seed42/status.json",
+    "sha256": "4dba9982df2f173dc74a31d875ae3256a427e54f0984b6cd40346d4e1dcc2605"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed43/test_predictions.csv",
+    "package": "results/pretrained/unixcoder_seed43/test_predictions.csv",
+    "sha256": "8f50deb91366fbc68402971016ad8adc06fd3dec1518aa7c405d43058165aa85"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed43/val_predictions.csv",
+    "package": "results/pretrained/unixcoder_seed43/val_predictions.csv",
+    "sha256": "fe4fa1781aced38bf033bdb9668ca0b87b7fbdfec8be99cfbb120cc5c3da6d27"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed43/test_metrics.json",
+    "package": "results/pretrained/unixcoder_seed43/test_metrics.json",
+    "sha256": "0b0b465f465da4c44605b679048c37de7e5bab51dc12b34066dbffb8662ebbca"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed43/validation_metrics.json",
+    "package": "results/pretrained/unixcoder_seed43/validation_metrics.json",
+    "sha256": "8d1dd041430a7bd94227c1c61c699e018c7f71fa25e1691f5d07c9706ad0643f"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed43/config.json",
+    "package": "results/pretrained/unixcoder_seed43/config.json",
+    "sha256": "45e900ebc4665d6925ac2a9d2fe1f6247c4dd68adecc15848b1d7992744207dc"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed43/status.json",
+    "package": "results/pretrained/unixcoder_seed43/status.json",
+    "sha256": "67b0aaef2dfebb35811fd493e7e5ce03b7ce2cdf92193cb68921796bccbdac17"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed44/test_predictions.csv",
+    "package": "results/pretrained/unixcoder_seed44/test_predictions.csv",
+    "sha256": "46ec872c52de4dba7e3d0f9ff2477cb68f399b1bf9b4d25603493c01da1eed1b"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed44/val_predictions.csv",
+    "package": "results/pretrained/unixcoder_seed44/val_predictions.csv",
+    "sha256": "370a7924233aa32876a3441b8cd4bfaef38128873d93e69aeccf6b938627373f"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed44/test_metrics.json",
+    "package": "results/pretrained/unixcoder_seed44/test_metrics.json",
+    "sha256": "b930e3a5a1c605057355592bdd415f95e58ae2f5d5ca017aeca7c2f4802c572d"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed44/validation_metrics.json",
+    "package": "results/pretrained/unixcoder_seed44/validation_metrics.json",
+    "sha256": "bc9097bba9e0771590f88a9afd72fd6fbe536430fd9d84881c32ef9d128bdbaf"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed44/config.json",
+    "package": "results/pretrained/unixcoder_seed44/config.json",
+    "sha256": "4e5131eba305ade87b5520d906c421032436e1fdb6df665d8102e2c92348b87f"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed44/status.json",
+    "package": "results/pretrained/unixcoder_seed44/status.json",
+    "sha256": "f077ebccdba8429547963659308a929ddb2d4b748411ec4c368dcc4fa9fcc9af"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/summary.json",
+    "package": "results/joint/summary.json",
+    "sha256": "7cea7c7316c43592d0f0288edf667753b9f3ac428b0c7faea69ca5cbb369109e"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/per_seed.csv",
+    "package": "results/joint/per_seed.csv",
+    "sha256": "c36dd791011e1715c5b262ea494ab9700f15ecceec90d00419fd57d53ead149e"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/frozen_configs.json",
+    "package": "results/joint/frozen_configs.json",
+    "sha256": "59c26d5cb322c6441fcd2b00a593ae1e071c27278841adcb64618ccc7a2e0c38"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/summary.json",
+    "package": "results/supervision/summary.json",
+    "sha256": "27b82809bc703d097e4936540b2de1da2cc56c33c5d689364754aac78d92403b"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/summary.json",
+    "package": "results/pretrained/summary.json",
+    "sha256": "e1a73ecabd51a64bd5af9097bcbb4285b04f215879165083cd69fba8bbe8fa08"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/per_seed.csv",
+    "package": "results/pretrained/per_seed.csv",
+    "sha256": "90e100cead38a0bd0837d6e5870ee998d321c9ce8e2f0b1819c52b63a64c2e5c"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/protocol.json",
+    "package": "results/pretrained/protocol.json",
+    "sha256": "9fdf7135778a0cd554efcb55e0b7ca37e7d1e5a990bd5ef2cead05e29513cb59"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/selected.json",
+    "package": "results/pretrained/selected.json",
+    "sha256": "c58d97f1d94627ec9ae61c826bf4a72eab5115fa105224e3bfa82187c699c0f5"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/results/assembly_probe_summary.json",
+    "package": "results/supplement/assembly_probe_summary.json",
+    "sha256": "d9418af4e73d14b21d3a705a98efbf0cc960e4c433b16586f94756af00c52caf"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/results/hw_merged.jsonl",
+    "package": "results/supplement/hw_merged.jsonl",
+    "sha256": "2c3c93b3e8f6c085c76f1d9f0f71c8db3af1f70758059975b63a027d42f2b819"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/results/feature_results.json",
+    "package": "results/supplement/feature_results.json",
+    "sha256": "47c38c71726ba6c6f9406db37308be87337668163aa12a707a88dbe188b3027a"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/results/hw_environment.txt",
+    "package": "results/supplement/hw_environment.txt",
+    "sha256": "eed8e201e7177d56fd5aa2b8c8d81ef890299f19c68f6c5c456dd4924f506653"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/results/speed_robustness.json",
+    "package": "results/supplement/speed_robustness.json",
+    "sha256": "3eea6948a6dda5b3b64d330b27fa4b1e4e45a0da727d8182985a05109650d393"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/results/hw_analysis.json",
+    "package": "results/supplement/hw_analysis.json",
+    "sha256": "afaf2e2c4fc90c48bc3638b89070a1ce1ff3a462d3cd0ae07570a90cb41f1823"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/results/aug_runs/seed42_p0.5_metrics.json",
+    "package": "results/supplement/aug_runs/seed42_p0.5_metrics.json",
+    "sha256": "eba003c305c81bed17e81df08e578c957aee0c837f372c84130756c2c9b1c41b"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/results/aug_runs/seed43_p0.5_metrics.json",
+    "package": "results/supplement/aug_runs/seed43_p0.5_metrics.json",
+    "sha256": "fe1d50db75d5ff08b86ec089ebbfdee74ae626140ec10354714d9983abb56d41"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/results/aug_runs/seed44_p0.5_metrics.json",
+    "package": "results/supplement/aug_runs/seed44_p0.5_metrics.json",
+    "sha256": "e24cd4c4905fc47d9d54d5ad32a617d379d5edf813fc70db8ddb8113377aaa9c"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/results/asm_only/seed43_metrics.json",
+    "package": "results/supplement/asm_only/seed43_metrics.json",
+    "sha256": "53688dfb158f2f8382601cc58974af931d3ca6b4e747c99de13486a98d0403bf"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/results/asm_only/seed44_metrics.json",
+    "package": "results/supplement/asm_only/seed44_metrics.json",
+    "sha256": "e5742afe4345eef052d4d619a4b3bcb4c417d6a02770762770fc50221a2d14a9"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/results/asm_only/seed42_metrics.json",
+    "package": "results/supplement/asm_only/seed42_metrics.json",
+    "sha256": "b8b0ab2ec626cad5ec64d154b9dba36a598ae6e5c7cfde34e1d67e6ff149874d"
+  },
+  {
+    "source": "/Users/lirongy/Downloads/alvis_dl4nlp_backup/dl4nlp_crossmodal/bpe_tokenizer.json",
+    "package": "data/tokenizers/bpe_tokenizer.json",
+    "sha256": "92da63d5885cdf33090ee794abe8ace12f03c6f2110c6b9dbef208571d5771a8"
+  },
+  {
+    "source": "/Users/lirongy/Downloads/alvis_dl4nlp_backup/dl4nlp_crossmodal/ia_tokenizer.pkl",
+    "package": "data/tokenizers/ia_tokenizer.pkl",
+    "sha256": "413d66c3c1eb71ee2cb14615cfa6535bcc5b7630910ff80c3f4447d11c86dc49"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/berzelius_ia_fixed_seed42/tokenizer_spec.json",
+    "package": "data/tokenizers/tokenizer_spec.json",
+    "sha256": "35dcbe95f7b7de491706c8924f8cbfb49ccdad9ef9dad0d4de7d774c377a9a39"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/berzelius_source_only_seed42/source_only_data/probe_train_indices.npy",
+    "package": "data/splits/probe_train_indices.npy",
+    "sha256": "ff62f51865a9c3e52507f2d4744ac8a8703265179030ebf5b639b83a847cf0d6"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_validation_search_20261026/validation_data/ids.json",
+    "package": "data/splits/validation_ids.json",
+    "sha256": "01d876d905a707174ac8e401675693b07f5bcf4d34c99b40b006bff6b87a45d0"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/berzelius_source_only_seed42/source_only_data/manifest.json",
+    "package": "provenance/source_cache_manifest.json",
+    "sha256": "ca75e342770ae7ad5cc7531f99cbe7606ab0f8820a1cfeeac07e22cd54ff58e8"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/berzelius_ia_fixed_seed42/assembly_data/manifest.json",
+    "package": "provenance/ia_cache_manifest.json",
+    "sha256": "299e17bc05da74c6f784d2f7e12701261a146d7b33c1a9bef1602ed771cc0c86"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/berzelius_bpe_ablation_seed42/assembly_data/manifest.json",
+    "package": "provenance/bpe_cache_manifest.json",
+    "sha256": "24bc1676d1b035e154d8c71a00551cf566d8776e1d8b3f37d1ac6cab0c1a9445"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_validation_search_20261026/validation_data/manifest.json",
+    "package": "provenance/validation_manifest.json",
+    "sha256": "c116e397f38b5e9a3e97a167f3f90bbfee9f741bdfd509f4e0f8e0eb449355ad"
+  },
+  {
+    "source": "/Users/lirongy/Downloads/alvis_dl4nlp_backup/Experiment/final_train_seeded.py",
+    "package": "provenance/original_code/source_ipc_baseline_20261025/archive/Experiment/final_train_seeded.py",
+    "sha256": "d71b71a33b7a949c619905f6330accd7be32d047b224f24213ad6325072dfd3d"
+  },
+  {
+    "source": "/Users/lirongy/Downloads/alvis_dl4nlp_backup/Experiment/prepare.py",
+    "package": "provenance/original_code/source_ipc_baseline_20261025/archive/Experiment/prepare.py",
+    "sha256": "4dfa036781cac3f2ffb3eea37d9c94ad0c008a2c0fbc50ce5b4d30fc394b8a93"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/berzelius_ia_fixed_seed42/fixed_tokenizer.py",
+    "package": "provenance/original_code/ia_fixed_joint_ablation_20261026/fixed_tokenizer.py",
+    "sha256": "0576d6aaa39a47353c9bd9a0983639c7f7916be6e6ba28694b4eefe67a42c7b3"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/berzelius_ia_fixed_seed42/tokenizer_spec.json",
+    "package": "provenance/original_code/ia_fixed_joint_ablation_20261026/tokenizer_spec.json",
+    "sha256": "35dcbe95f7b7de491706c8924f8cbfb49ccdad9ef9dad0d4de7d774c377a9a39"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/berzelius_ia_fixed_seed42/test_tokenizer.py",
+    "package": "provenance/original_code/ia_fixed_joint_ablation_20261026/test_tokenizer.py",
+    "sha256": "460deb81af8ad43b4abb72a7487aa64578efc0a0d31d38c4e3096fcc915cc9a1"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/train_fixed.py",
+    "package": "provenance/original_code/ia_bpe_tuned_multiseed_20261027/train_fixed.py",
+    "sha256": "a97a4091801ffca5dd5fb4f8071b3a4c0459eababcbf4d87f4b52b8ccdd1466f"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/frozen_configs.json",
+    "package": "provenance/original_code/ia_bpe_tuned_multiseed_20261027/frozen_configs.json",
+    "sha256": "59c26d5cb322c6441fcd2b00a593ae1e071c27278841adcb64618ccc7a2e0c38"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_validation_search_20261026/train_search.py",
+    "package": "provenance/original_code/ia_bpe_validation_search_20261026/train_search.py",
+    "sha256": "f7665f9d9ca11385bd2f43a522e22ad15b392963eb1133817f3e11cdfc91c221"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_validation_search_20261026/search_plan.json",
+    "package": "provenance/original_code/ia_bpe_validation_search_20261026/search_plan.json",
+    "sha256": "a982b70fa1ab2aed8dee99dd68c71160f90a3aff6799052c9a178a950e51630f"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_validation_search_20261026/promotions.json",
+    "package": "provenance/original_code/ia_bpe_validation_search_20261026/promotions.json",
+    "sha256": "d0c4febb17c9d32618d83a0542e6aed4936509eb2af466d21ee3613f805b4f7a"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_validation_search_20261026/selected_configs.json",
+    "package": "provenance/original_code/ia_bpe_validation_search_20261026/selected_configs.json",
+    "sha256": "2c8003f731265cd6e739816846cf811b50547c15dc192e8b82cc4303a5f16de9"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/train.py",
+    "package": "provenance/original_code/supervision_ablations_20261027/train.py",
+    "sha256": "c1806ac84e0eff4ab9f3fad45aa2907a5b58afc084d8a3f05efc44fa088a8567"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/experiment.py",
+    "package": "provenance/original_code/pretrained_ipc_30min_20261028/experiment.py",
+    "sha256": "9b17d6f9bf92b9e2741333d3f990ebae0442cc82740ab9edd5ddb076906a6889"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/protocol.json",
+    "package": "provenance/original_code/pretrained_ipc_30min_20261028/protocol.json",
+    "sha256": "9fdf7135778a0cd554efcb55e0b7ca37e7d1e5a990bd5ef2cead05e29513cb59"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/selected.json",
+    "package": "provenance/original_code/pretrained_ipc_30min_20261028/selected.json",
+    "sha256": "c58d97f1d94627ec9ae61c826bf4a72eab5115fa105224e3bfa82187c699c0f5"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/code/speed_robustness.py",
+    "package": "provenance/original_code/ipc_validation_20261030/speed_robustness.py",
+    "sha256": "5c58498cc9a5e9dcd2f2049b48409515ed09dcaf509c91aeb4a8b5fad583e189"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/code/aug_prepare.py",
+    "package": "provenance/original_code/ipc_validation_20261030/aug_prepare.py",
+    "sha256": "1bc01e01b81d4422a64fa270f77922a4d2c5da792ea89b115f5af16b79d0777b"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/code/harness.c.in",
+    "package": "provenance/original_code/ipc_validation_20261030/harness.c.in",
+    "sha256": "5e13e8aa7877b3a860c7338bb83694152f8c51c25e9ca3526eb29bbfe4476f5e"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/code/asm_only_train.py",
+    "package": "provenance/original_code/ipc_validation_20261030/asm_only_train.py",
+    "sha256": "8781c2743eb3a3f4f845e117ede44b02f93ece217e9e95be4566d0d5b4811aee"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/code/predict_hw.py",
+    "package": "provenance/original_code/ipc_validation_20261030/predict_hw.py",
+    "sha256": "be5de5a9793e02ed90d195a2664a05068bf7fafc0e7e602a092aa43d9ebeec5b"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/code/run_hw.py",
+    "package": "provenance/original_code/ipc_validation_20261030/run_hw.py",
+    "sha256": "c259927aa05d1b60362ed181531ecda52685d6c5e88da3cd8e87b514d8d801d8"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/code/aug_train.py",
+    "package": "provenance/original_code/ipc_validation_20261030/aug_train.py",
+    "sha256": "4706764ecf2cefc21122c39f908ba58f9c71b6e69cc133f0ac0c55921181e3d5"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/code/hw_prepare.py",
+    "package": "provenance/original_code/ipc_validation_20261030/hw_prepare.py",
+    "sha256": "54ac908c083fb6c18a42cff02f0c4422934c03faa58bf90d9037cc2d0725a189"
+  },
+  {
+    "source": "/Users/lirongy/papers/revision/code/hw_analyze.py",
+    "package": "provenance/original_code/ipc_validation_20261030/hw_analyze.py",
+    "sha256": "cf7452379f3d6f29fb77501fa5ae7d7f0c0b88abfb9bde208e24c5ffc988a7c5"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ispass_replication_20261102/remote_snapshot/prepare.py",
+    "package": "provenance/original_code/ipc_validation_20261030/prepare.py",
+    "sha256": "530c4867b404b5459afc7c6b2fa7eb2248ddd760b26ce5e039a9d503acaa719c"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ispass_replication_20261102/remote_snapshot/features.py",
+    "package": "provenance/original_code/ipc_validation_20261030/features.py",
+    "sha256": "eac5b5b93dd65388ace2ed488b1f87caac1fd7d1a3b1598dd06e84c745751059"
+  },
+  {
+    "source": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ispass_replication_20261102/remote_snapshot/assembly_probe.py",
+    "package": "provenance/original_code/ipc_validation_20261030/assembly_probe.py",
+    "sha256": "e9f64147b2b92cf7c1a31a6e8354254bf3ebf1b23dd535f65ee4e5ff208b79da"
+  }
+]

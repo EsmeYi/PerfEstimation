@@ -1,0 +1,56 @@
+{
+  "model": "BPE",
+  "seed": 43,
+  "selection": "hyperparameters frozen from prior validation only",
+  "frozen_configs_sha256": "59c26d5cb322c6441fcd2b00a593ae1e071c27278841adcb64618ccc7a2e0c38",
+  "tuned_config": {
+    "model": "BPE",
+    "trial_id": 15,
+    "target": "log1p",
+    "base_weight": 0.6,
+    "effective_lambda": 5.990544826588272,
+    "variance_calibration": 9.984241377647121,
+    "temperature": 0.05,
+    "label_smoothing": 0.05,
+    "batch_size": 256,
+    "target_steps": 9762
+  },
+  "splits_reported_separately": true,
+  "n_probe_train": 5000,
+  "tuned": {
+    "validation": {
+      "probe_r2_log1p": 0.7374735572580016,
+      "probe_r2_raw_ipc": 0.7465967146900656,
+      "probe_mae_ipc": 0.28256231552722283,
+      "direct_head_r2_raw_ipc": 0.7380281532317835,
+      "n": 2000
+    },
+    "test": {
+      "probe_r2_log1p": 0.7335414915370679,
+      "probe_r2_raw_ipc": 0.7354058013644833,
+      "probe_mae_ipc": 0.294088080256052,
+      "direct_head_r2_raw_ipc": 0.7317540067122174,
+      "n": 2000
+    }
+  },
+  "default": {
+    "validation": {
+      "probe_r2_log1p": 0.7248240680546616,
+      "probe_r2_raw_ipc": 0.7298181761814919,
+      "probe_mae_ipc": 0.30245369343881867,
+      "direct_head_r2_raw_ipc": 0.7402378846641486,
+      "n": 2000
+    },
+    "test": {
+      "probe_r2_log1p": 0.7133586473606481,
+      "probe_r2_raw_ipc": 0.7205100327387002,
+      "probe_mae_ipc": 0.3147521088916342,
+      "direct_head_r2_raw_ipc": 0.7396159974208836,
+      "n": 2000
+    }
+  },
+  "checkpoint_paths": {
+    "tuned": "/proj/berzelius-2026-145/users/x_liryi/ia_bpe_tuned_multiseed_20261027/runs/BPE_seed43/checkpoint.pt",
+    "default": "/proj/berzelius-2026-145/users/x_liryi/bpe_joint_ablation_20261025/bpe_joint_seed43/checkpoint.pt"
+  }
+}

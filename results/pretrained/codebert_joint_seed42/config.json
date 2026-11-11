@@ -1,0 +1,14 @@
+{
+  "model": "codebert",
+  "kind": "joint",
+  "lr": 5e-05,
+  "alignment_weight": 0.03,
+  "seed": 42,
+  "updates": 9762,
+  "batch": 256,
+  "microbatch": 16,
+  "source_parameters": 124055040,
+  "source_dimensions": 768,
+  "train_only_alignment_dimensions": 128,
+  "protocol_sha256": "d2b88d891483b6a4ae18aaf6e52508ca6036a0ed6df7a12f95cc8add17879467"
+}

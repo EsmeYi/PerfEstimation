@@ -1,0 +1,11 @@
+{
+  "condition": "codebert_joint",
+  "seed": 42,
+  "test_n": 17301,
+  "checkpoint": "/nobackup/proj/disk/naiss2026-4-769/personal/lirongy/dl4nlp/pretrained_equal_steps_20261108/runs/codebert_joint_lr5e-05_aw0_seed42/checkpoint.pt",
+  "source_readout": "/nobackup/proj/disk/naiss2026-4-769/personal/lirongy/dl4nlp/pretrained_equal_steps_20261108/runs/codebert_joint_lr5e-05_aw0_seed42/eval_full/readout.npz",
+  "original2k_max_abs_log_prediction_difference": 0.0,
+  "precision": "float32 encoder; float64 Ridge",
+  "gpu": "NVIDIA GH200 120GB",
+  "torch": "2.9.1"
+}

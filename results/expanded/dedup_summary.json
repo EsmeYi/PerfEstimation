@@ -1,0 +1,49 @@
+{
+  "protocol": {
+    "date": "2026-11-09",
+    "status": "local analysis started; remote GPU blocked by login node unavailable",
+    "primary_evaluation": "unchanged 2000 test functions; supplement full17301",
+    "near_duplicate_rule": "whole-source alpha-normalized C lexical token 5-gram set Jaccard",
+    "thresholds": [
+      0.8,
+      0.9,
+      0.95
+    ],
+    "primary_threshold": 0.9,
+    "reference": "all309913 encoder-training functions; Ridge fitting sample is a subset",
+    "retrieval": "exact prefix-filter candidates at Jaccard>=0.8; exact hashed-shingle set intersection verifies candidates; no MinHash sampling",
+    "normalization": "remove comments and whitespace; preserve C keywords/operators; consistently rename identifiers by first occurrence in each source; abstract numeric, string and character literals",
+    "readout": "reuse existing final Ridge coefficients; do not refit or select using expanded test",
+    "metrics": [
+      "R2 log1p IPC",
+      "MAE IPC",
+      "Spearman static IPC"
+    ],
+    "efficiency": "same GH200 GPU; all eval float32,512token cap,batch1 latency,batch16 throughput, warmup then synchronized timed repetitions; encoder+Ridge, tokenization separately; CUDA allocated/reserved peaks; no training speed comparison"
+  },
+  "test_n": 17301,
+  "train_n": 309913,
+  "elapsed_seconds": 116.71859854203649,
+  "summary": {
+    "original2000": {
+      "n": 2000,
+      "exact_duplicates": 135,
+      "normalized_duplicates": 563,
+      "retained_after_near_filter": {
+        "0.8": 1327,
+        "0.9": 1398,
+        "0.95": 1424
+      }
+    },
+    "full17301": {
+      "n": 17301,
+      "exact_duplicates": 1212,
+      "normalized_duplicates": 4348,
+      "retained_after_near_filter": {
+        "0.8": 11972,
+        "0.9": 12600,
+        "0.95": 12821
+      }
+    }
+  }
+}

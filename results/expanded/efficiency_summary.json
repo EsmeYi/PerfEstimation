@@ -1,0 +1,123 @@
+{
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "device_total_bytes": 42404806656,
+  "torch": "2.5.1",
+  "cuda": "12.1",
+  "precision": "float32 encoder and Ridge; no autocast",
+  "sequence_length": 512,
+  "scope": "pretokenized source encoder plus scalar Ridge on GPU; excludes transfers and tokenization",
+  "weights_note": "Compact joint seed42; historical IPC-only seed42 pretrained exports used solely for architecture timing",
+  "models": {
+    "compact": {
+      "parameters": 7517696,
+      "weights": "/proj/berzelius-2026-145/users/x_liryi/revision_eval_20261109/ipc-replication/checkpoints/IA_seed42.pt",
+      "tokenization": {
+        "host": "same compute node, sequential256 sources",
+        "n": 256,
+        "p50_ms": 0.24437953834421933,
+        "p95_ms": 0.9131929837167263,
+        "mean_ms": 0.3412126789044123
+      },
+      "measurements": {
+        "1": {
+          "batch": 1,
+          "repetitions": 100,
+          "warmup": 20,
+          "mean_ms": 1.7868819530121982,
+          "p50_ms": 1.7818765190895647,
+          "p95_ms": 1.7950208217371255,
+          "functions_per_second": 559.6340588220007,
+          "peak_allocated_mib": 48.74853515625,
+          "peak_reserved_mib": 54.0,
+          "finite": true
+        },
+        "16": {
+          "batch": 16,
+          "repetitions": 100,
+          "warmup": 20,
+          "mean_ms": 7.1097245800774544,
+          "p50_ms": 7.094138476531953,
+          "p95_ms": 7.223222029278986,
+          "functions_per_second": 2250.4387926410636,
+          "peak_allocated_mib": 213.85498046875,
+          "peak_reserved_mib": 314.0,
+          "finite": true
+        }
+      }
+    },
+    "codebert": {
+      "parameters": 124055040,
+      "weights": "/proj/berzelius-2026-145/users/x_liryi/revision_eval_20261109/ipc-replication/checkpoints/codebert_seed42.pt",
+      "tokenization": {
+        "host": "same compute node, sequential256 sources",
+        "n": 256,
+        "p50_ms": 0.5916244990658015,
+        "p95_ms": 2.270785509608686,
+        "mean_ms": 0.8338067805198079
+      },
+      "measurements": {
+        "1": {
+          "batch": 1,
+          "repetitions": 100,
+          "warmup": 20,
+          "mean_ms": 8.983086586231366,
+          "p50_ms": 8.981104474514723,
+          "p95_ms": 9.270727110560983,
+          "functions_per_second": 111.32031183276456,
+          "peak_allocated_mib": 500.42236328125,
+          "peak_reserved_mib": 552.0,
+          "finite": true
+        },
+        "16": {
+          "batch": 16,
+          "repetitions": 100,
+          "warmup": 20,
+          "mean_ms": 95.44771908433177,
+          "p50_ms": 95.43076250702143,
+          "p95_ms": 95.71362521965057,
+          "functions_per_second": 167.63103564437594,
+          "peak_allocated_mib": 751.1171875,
+          "peak_reserved_mib": 960.0,
+          "finite": true
+        }
+      }
+    },
+    "unixcoder": {
+      "parameters": 125339136,
+      "weights": "/proj/berzelius-2026-145/users/x_liryi/revision_eval_20261109/ipc-replication/checkpoints/unixcoder_seed42.pt",
+      "tokenization": {
+        "host": "same compute node, sequential256 sources",
+        "n": 256,
+        "p50_ms": 0.7677194953430444,
+        "p95_ms": 2.3222660238388926,
+        "mean_ms": 0.9539644522646995
+      },
+      "measurements": {
+        "1": {
+          "batch": 1,
+          "repetitions": 100,
+          "warmup": 20,
+          "mean_ms": 8.918947058846243,
+          "p50_ms": 8.969777496531606,
+          "p95_ms": 9.168874169699848,
+          "functions_per_second": 112.12085837062479,
+          "peak_allocated_mib": 505.20849609375,
+          "peak_reserved_mib": 556.0,
+          "finite": true
+        },
+        "16": {
+          "batch": 16,
+          "repetitions": 100,
+          "warmup": 20,
+          "mean_ms": 95.4015969746979,
+          "p50_ms": 95.3587050025817,
+          "p95_ms": 95.6270193652017,
+          "functions_per_second": 167.71207723329275,
+          "peak_allocated_mib": 755.9033203125,
+          "peak_reserved_mib": 964.0,
+          "finite": true
+        }
+      }
+    }
+  }
+}

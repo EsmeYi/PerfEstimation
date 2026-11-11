@@ -1,0 +1,32 @@
+{
+  "models": [
+    "IA",
+    "BPE"
+  ],
+  "seed": 42,
+  "base_weights": [
+    0.05,
+    0.15,
+    0.3,
+    0.6
+  ],
+  "targets": [
+    "raw",
+    "log1p"
+  ],
+  "temperature": 0.05,
+  "smoothing": 0.05,
+  "screen_steps": 2000,
+  "full_steps": 9762,
+  "promote_per_model": 2,
+  "batch_size": 256,
+  "selection_metric": "validation Ridge probe R2 on log1p IPC; higher is better",
+  "tie_break": "lower trial ID",
+  "validation_functions": 2000,
+  "ridge_training_functions": 5000,
+  "ridge_alpha": 1,
+  "test_evaluation": false,
+  "lambda_calibration": "effective_lambda = base_weight * Var(train_raw_IPC)/Var(train_target); population variances on full training labels only",
+  "calibration_scope": "matches target variance scale, does not imply equal gradient norms",
+  "trial_order": "IA raw4, IA log1p4, BPE raw4, BPE log1p4"
+}

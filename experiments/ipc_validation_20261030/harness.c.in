@@ -1,0 +1,64 @@
+#define _GNU_SOURCE
+#include <linux/perf_event.h>
+#include <sys/syscall.h>
+#include <sys/ioctl.h>
+#include <sys/mman.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <string.h>
+#include <time.h>
+
+/* Hardware IPC of one function called in a tight loop; counters are user-mode only. */
+extern long @NAME@(@PROTO@);
+
+static int open_counter(uint64_t config, int group_fd) {
+    struct perf_event_attr a;
+    memset(&a, 0, sizeof a);
+    a.type = PERF_TYPE_HARDWARE; a.size = sizeof a; a.config = config;
+    a.disabled = group_fd < 0; a.exclude_kernel = 1; a.exclude_hv = 1;
+    a.read_format = PERF_FORMAT_GROUP;
+    return syscall(SYS_perf_event_open, &a, 0, -1, group_fd, 0);
+}
+
+static double now(void) { struct timespec t; clock_gettime(CLOCK_MONOTONIC, &t); return t.tv_sec + t.tv_nsec * 1e-9; }
+
+static volatile long sink;
+
+static void body(long n, char *b) {
+    long acc = 0;
+    for (long i = 0; i < n; i++) {
+@CALLS@
+    }
+    sink = acc;
+}
+
+int main(int argc, char **argv) {
+    int variant = atoi(argv[1]);
+    size_t SZ = 8u << 20;
+    char *b = mmap(0, SZ, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+    if (b == MAP_FAILED) return 3;
+    if (variant == 1) {
+        for (size_t i = 0; i < SZ / 8; i++) ((uint64_t *)b)[i] = (uint64_t)(b + (SZ / 2) + ((i * 64) % (SZ / 4)));
+    }
+    alarm(30);
+    body(2000, b);
+    double t0 = now(); body(20000, b); double dt = (now() - t0) / 20000;
+    long n = (long)(0.02 / (dt > 1e-9 ? dt : 1e-9));
+    if (n < 20000) n = 20000;
+    if (n > 40000000) n = 40000000;
+    int fc = open_counter(PERF_COUNT_HW_CPU_CYCLES, -1);
+    int fi = open_counter(PERF_COUNT_HW_INSTRUCTIONS, fc);
+    if (fc < 0 || fi < 0) return 4;
+    for (int rep = 0; rep < 7; rep++) {
+        ioctl(fc, PERF_EVENT_IOC_RESET, PERF_IOC_FLAG_GROUP);
+        ioctl(fc, PERF_EVENT_IOC_ENABLE, PERF_IOC_FLAG_GROUP);
+        body(n, b);
+        ioctl(fc, PERF_EVENT_IOC_DISABLE, PERF_IOC_FLAG_GROUP);
+        uint64_t r[3];
+        if (read(fc, r, sizeof r) != sizeof r) return 5;
+        printf("%d %ld %lu %lu\n", rep, n * @UNROLL@, r[1], r[2]);
+    }
+    return 0;
+}

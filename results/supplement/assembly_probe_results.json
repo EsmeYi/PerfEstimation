@@ -1,0 +1,56 @@
+{
+  "42": {
+    "checkpoint": "/proj/berzelius-2026-145/users/x_liryi/ia_bpe_validation_search_20261026/trials/trial_07/checkpoint.pt",
+    "step": 9762,
+    "n_probe_train": 5000,
+    "ridge_alpha": 1,
+    "embedding_standardization": false,
+    "description": "Frozen assembly branch from joint-trained IA model; IPC supervision enters this branch via joint representation learning. Not an assembly-only trained model or theoretical upper bound.",
+    "val": {
+      "r2_log1p": 0.7851622213692736,
+      "r2_raw": 0.7871998632823305,
+      "mae_ipc": 0.28788920527251505
+    },
+    "test": {
+      "r2_log1p": 0.7858080214113382,
+      "r2_raw": 0.7828866397735659,
+      "mae_ipc": 0.28518028937711243
+    }
+  },
+  "43": {
+    "checkpoint": "/proj/berzelius-2026-145/users/x_liryi/ia_bpe_tuned_multiseed_20261027/runs/IA_seed43/checkpoint.pt",
+    "step": 9762,
+    "n_probe_train": 5000,
+    "ridge_alpha": 1,
+    "embedding_standardization": false,
+    "description": "Frozen assembly branch from joint-trained IA model; IPC supervision enters this branch via joint representation learning. Not an assembly-only trained model or theoretical upper bound.",
+    "val": {
+      "r2_log1p": 0.7996004999612785,
+      "r2_raw": 0.8068563968579237,
+      "mae_ipc": 0.2830150093022795
+    },
+    "test": {
+      "r2_log1p": 0.793651872337978,
+      "r2_raw": 0.8018208607928521,
+      "mae_ipc": 0.28276229526307795
+    }
+  },
+  "44": {
+    "checkpoint": "/proj/berzelius-2026-145/users/x_liryi/ia_bpe_tuned_multiseed_20261027/runs/IA_seed44/checkpoint.pt",
+    "step": 9762,
+    "n_probe_train": 5000,
+    "ridge_alpha": 1,
+    "embedding_standardization": false,
+    "description": "Frozen assembly branch from joint-trained IA model; IPC supervision enters this branch via joint representation learning. Not an assembly-only trained model or theoretical upper bound.",
+    "val": {
+      "r2_log1p": 0.768696276554482,
+      "r2_raw": 0.7693745121970943,
+      "mae_ipc": 0.29584774578841766
+    },
+    "test": {
+      "r2_log1p": 0.7669733407919455,
+      "r2_raw": 0.7622998503162413,
+      "mae_ipc": 0.3065381018333188
+    }
+  }
+}

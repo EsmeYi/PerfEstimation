@@ -1,0 +1,17 @@
+{
+  "train.jsonl": {
+    "bytes": 2847335079,
+    "records": 309913,
+    "sha256": "e9d3461e61f85ca85426d0cc17fe90d62d192b91b61483e135502459e8775415"
+  },
+  "val.jsonl": {
+    "bytes": 155992006,
+    "records": 17150,
+    "sha256": "d4ac07eee3cc3038a9629375bf531d0b4aa369c4c765c0e4367ac3a6bf8cde36"
+  },
+  "test.jsonl": {
+    "bytes": 160633342,
+    "records": 17301,
+    "sha256": "c963afecae866d5bc49401de6209cbeb2e97df409eaeae49abb797641fba0dd9"
+  }
+}

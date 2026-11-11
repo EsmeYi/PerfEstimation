@@ -1,0 +1,9 @@
+{
+  "split": "original val.jsonl, first2000 nonempty records",
+  "n": 2000,
+  "input_sha256": "05a2739605b092eaa81ebc5b0643a7f810c6b31082ae682094e990d44b639815",
+  "tokenizer_sha256": "92da63d5885cdf33090ee794abe8ace12f03c6f2110c6b9dbef208571d5771a8",
+  "record_ids_sha256": "c88054cbe6bc9e27207b6cec2bdc45d0c5120ffa4230a1a85b78a910ee4d0570",
+  "probe_training_overlap": false,
+  "exclusions": 0
+}

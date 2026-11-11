@@ -1,0 +1,6 @@
+{
+  "model": "microsoft/codebert-base",
+  "commit": "3b0952feddeffad0063f274080e3c23d75e7eb39",
+  "tokenizer": "native",
+  "representation": "masked mean 768"
+}

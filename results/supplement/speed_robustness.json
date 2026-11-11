@@ -1,0 +1,77 @@
+{
+  "n_test": 2000,
+  "stripped_available": 1136,
+  "compile_rate_full_source": 1.0,
+  "compile_rate_without_preamble": 0.028169014084507043,
+  "mean_bpe_len_full": 323.56866455078125,
+  "mean_bpe_len_stripped": 190.7764129638672,
+  "robustness_per_seed": {
+    "42": {
+      "full": {
+        "r2_log1p": 0.7075729023098656,
+        "mae_ipc": 0.2916974532352966
+      },
+      "stripped": {
+        "r2_log1p": -0.724873000705748,
+        "mae_ipc": 0.9368058113184565
+      },
+      "corr_full_vs_stripped_pred": 0.5086250840032767
+    },
+    "43": {
+      "full": {
+        "r2_log1p": 0.6946419788647094,
+        "mae_ipc": 0.2869358673408022
+      },
+      "stripped": {
+        "r2_log1p": -0.7856631838190986,
+        "mae_ipc": 0.9419677561639933
+      },
+      "corr_full_vs_stripped_pred": 0.4874886527762934
+    },
+    "44": {
+      "full": {
+        "r2_log1p": 0.7091253689100356,
+        "mae_ipc": 0.2893050682086341
+      },
+      "stripped": {
+        "r2_log1p": -0.6440959899037579,
+        "mae_ipc": 0.8966702971194237
+      },
+      "corr_full_vs_stripped_pred": 0.4934166825992487
+    }
+  },
+  "speed": {
+    "n": 300,
+    "clang_O3_S_ms": {
+      "mean": 60.71112348232418,
+      "median": 58.369767386466265,
+      "p95": 74.760302901268
+    },
+    "llvm_mca_ms": {
+      "mean": 43.524825596250594,
+      "median": 40.020714746788144,
+      "p95": 62.9959455691278
+    },
+    "compile_plus_mca_ms": {
+      "mean": 104.23594907857478,
+      "median": 99.28577789105475,
+      "p95": 134.9323932081461
+    },
+    "model_cpu_1thread_batch1_ms": {
+      "mean": 83.46389436887371,
+      "median": 81.46504848264158,
+      "p95": 93.18898245692253
+    },
+    "model_cpu_8thread_batch1_ms": {
+      "mean": 16.86802825683521,
+      "median": 16.56653988175094,
+      "p95": 18.673410173505545
+    },
+    "model_gpu_a100_batch256": {
+      "tokenize_ms_per_function": 0.4028150010854006,
+      "encode_ms_per_function": 0.3718787683174014,
+      "functions_per_second_encode_only": 2689.0483813437077
+    },
+    "cpu": "Model name:          AMD EPYC 7742 64-Core Processor"
+  }
+}

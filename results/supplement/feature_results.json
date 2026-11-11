@@ -1,0 +1,1254 @@
+{
+  "probe5000_source_counts_ridge": {
+    "n_train": 5000,
+    "features": [
+      "src_lines",
+      "src_chars",
+      "src_identifiers",
+      "src_numbers",
+      "src_loops",
+      "src_branches",
+      "src_calls",
+      "src_pointer_stars",
+      "src_arithmetic",
+      "src_array_access",
+      "src_return"
+    ],
+    "selection": "highest validation r2_log1p, no test selection",
+    "selected": {
+      "alpha": 100.0
+    },
+    "validation_candidates": [
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 0.01
+        },
+        "r2_log1p": 0.07346747426613154
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 0.1
+        },
+        "r2_log1p": 0.07347666866178493
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 1.0
+        },
+        "r2_log1p": 0.07356722580845831
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 10.0
+        },
+        "r2_log1p": 0.07435115242007373
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 100.0
+        },
+        "r2_log1p": 0.07717074187807282
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 1000.0
+        },
+        "r2_log1p": 0.07179618872916071
+      }
+    ],
+    "val": {
+      "r2_log1p": 0.07717074187807282,
+      "r2_raw": 0.03683894871210869,
+      "mae_ipc": 0.6398664446755088
+    },
+    "test": {
+      "r2_log1p": 0.05254234361622312,
+      "r2_raw": -0.021342745454526302,
+      "mae_ipc": 0.6357662032555726
+    }
+  },
+  "probe5000_source_counts_hist_gradient_boosting": {
+    "n_train": 5000,
+    "features": [
+      "src_lines",
+      "src_chars",
+      "src_identifiers",
+      "src_numbers",
+      "src_loops",
+      "src_branches",
+      "src_calls",
+      "src_pointer_stars",
+      "src_arithmetic",
+      "src_array_access",
+      "src_return"
+    ],
+    "selection": "highest validation r2_log1p, no test selection",
+    "selected": {
+      "max_leaf_nodes": 15,
+      "max_iter": 200,
+      "l2_regularization": 1.0
+    },
+    "validation_candidates": [
+      {
+        "family": "hist_gradient_boosting",
+        "config": {
+          "max_leaf_nodes": 15,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        },
+        "r2_log1p": 0.4278635603784433
+      },
+      {
+        "family": "hist_gradient_boosting",
+        "config": {
+          "max_leaf_nodes": 31,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        },
+        "r2_log1p": 0.42108085891350555
+      }
+    ],
+    "val": {
+      "r2_log1p": 0.4278635603784433,
+      "r2_raw": 0.42782638063877065,
+      "mae_ipc": 0.4594294967200871
+    },
+    "test": {
+      "r2_log1p": 0.47533422272249737,
+      "r2_raw": 0.47226486456181926,
+      "mae_ipc": 0.43085945300254597
+    }
+  },
+  "probe5000_assembly_length_ridge": {
+    "n_train": 5000,
+    "features": [
+      "asm_instructions"
+    ],
+    "selection": "highest validation r2_log1p, no test selection",
+    "selected": {
+      "alpha": 1000.0
+    },
+    "validation_candidates": [
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 0.01
+        },
+        "r2_log1p": -0.019228321412006366
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 0.1
+        },
+        "r2_log1p": -0.01922782312021032
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 1.0
+        },
+        "r2_log1p": -0.019222841818703706
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 10.0
+        },
+        "r2_log1p": -0.019173190001327445
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 100.0
+        },
+        "r2_log1p": -0.01869235506317435
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 1000.0
+        },
+        "r2_log1p": -0.01510565233301886
+      }
+    ],
+    "val": {
+      "r2_log1p": -0.01510565233301886,
+      "r2_raw": -0.0443540061870793,
+      "mae_ipc": 0.6661573910413556
+    },
+    "test": {
+      "r2_log1p": -0.020867165995826387,
+      "r2_raw": -0.04973942331743064,
+      "mae_ipc": 0.6576118551623574
+    }
+  },
+  "probe5000_assembly_length_hist_gradient_boosting": {
+    "n_train": 5000,
+    "features": [
+      "asm_instructions"
+    ],
+    "selection": "highest validation r2_log1p, no test selection",
+    "selected": {
+      "max_leaf_nodes": 15,
+      "max_iter": 200,
+      "l2_regularization": 1.0
+    },
+    "validation_candidates": [
+      {
+        "family": "hist_gradient_boosting",
+        "config": {
+          "max_leaf_nodes": 15,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        },
+        "r2_log1p": 0.16759740795848965
+      },
+      {
+        "family": "hist_gradient_boosting",
+        "config": {
+          "max_leaf_nodes": 31,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        },
+        "r2_log1p": 0.16739137891700784
+      }
+    ],
+    "val": {
+      "r2_log1p": 0.16759740795848965,
+      "r2_raw": 0.12999689402243575,
+      "mae_ipc": 0.566378408496214
+    },
+    "test": {
+      "r2_log1p": 0.13755238353692179,
+      "r2_raw": 0.10919552808645305,
+      "mae_ipc": 0.5666874621814768
+    }
+  },
+  "probe5000_assembly_counts_ridge": {
+    "n_train": 5000,
+    "features": [
+      "asm_instructions",
+      "asm_chars",
+      "asm_memory_operands",
+      "asm_register_operands",
+      "asm_immediates",
+      "asm_move",
+      "asm_load_store",
+      "asm_branch",
+      "asm_call",
+      "asm_return",
+      "asm_compare",
+      "asm_add_sub",
+      "asm_multiply",
+      "asm_divide",
+      "asm_logic",
+      "asm_shift",
+      "asm_conditional_move",
+      "asm_setcc",
+      "asm_vector",
+      "asm_scalar_fp",
+      "asm_stack",
+      "asm_convert",
+      "asm_nop",
+      "asm_fraction_move",
+      "asm_fraction_load_store",
+      "asm_fraction_branch",
+      "asm_fraction_call",
+      "asm_fraction_return",
+      "asm_fraction_compare",
+      "asm_fraction_add_sub",
+      "asm_fraction_multiply",
+      "asm_fraction_divide",
+      "asm_fraction_logic",
+      "asm_fraction_shift",
+      "asm_fraction_conditional_move",
+      "asm_fraction_setcc",
+      "asm_fraction_vector",
+      "asm_fraction_scalar_fp",
+      "asm_fraction_stack",
+      "asm_fraction_convert",
+      "asm_fraction_nop"
+    ],
+    "selection": "highest validation r2_log1p, no test selection",
+    "selected": {
+      "alpha": 10.0
+    },
+    "validation_candidates": [
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 0.01
+        },
+        "r2_log1p": 0.6829775227323087
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 0.1
+        },
+        "r2_log1p": 0.6832132666220634
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 1.0
+        },
+        "r2_log1p": 0.6836311210352815
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 10.0
+        },
+        "r2_log1p": 0.683836613598592
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 100.0
+        },
+        "r2_log1p": 0.6827533534575475
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 1000.0
+        },
+        "r2_log1p": 0.6674412955410898
+      }
+    ],
+    "val": {
+      "r2_log1p": 0.683836613598592,
+      "r2_raw": 0.6326218421167422,
+      "mae_ipc": 0.36427241398753973
+    },
+    "test": {
+      "r2_log1p": 0.6778723342631701,
+      "r2_raw": 0.6169481621739611,
+      "mae_ipc": 0.36605331443250816
+    }
+  },
+  "probe5000_assembly_counts_hist_gradient_boosting": {
+    "n_train": 5000,
+    "features": [
+      "asm_instructions",
+      "asm_chars",
+      "asm_memory_operands",
+      "asm_register_operands",
+      "asm_immediates",
+      "asm_move",
+      "asm_load_store",
+      "asm_branch",
+      "asm_call",
+      "asm_return",
+      "asm_compare",
+      "asm_add_sub",
+      "asm_multiply",
+      "asm_divide",
+      "asm_logic",
+      "asm_shift",
+      "asm_conditional_move",
+      "asm_setcc",
+      "asm_vector",
+      "asm_scalar_fp",
+      "asm_stack",
+      "asm_convert",
+      "asm_nop",
+      "asm_fraction_move",
+      "asm_fraction_load_store",
+      "asm_fraction_branch",
+      "asm_fraction_call",
+      "asm_fraction_return",
+      "asm_fraction_compare",
+      "asm_fraction_add_sub",
+      "asm_fraction_multiply",
+      "asm_fraction_divide",
+      "asm_fraction_logic",
+      "asm_fraction_shift",
+      "asm_fraction_conditional_move",
+      "asm_fraction_setcc",
+      "asm_fraction_vector",
+      "asm_fraction_scalar_fp",
+      "asm_fraction_stack",
+      "asm_fraction_convert",
+      "asm_fraction_nop"
+    ],
+    "selection": "highest validation r2_log1p, no test selection",
+    "selected": {
+      "max_leaf_nodes": 15,
+      "max_iter": 200,
+      "l2_regularization": 1.0
+    },
+    "validation_candidates": [
+      {
+        "family": "hist_gradient_boosting",
+        "config": {
+          "max_leaf_nodes": 15,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        },
+        "r2_log1p": 0.8469222022145454
+      },
+      {
+        "family": "hist_gradient_boosting",
+        "config": {
+          "max_leaf_nodes": 31,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        },
+        "r2_log1p": 0.8411080759331862
+      }
+    ],
+    "val": {
+      "r2_log1p": 0.8469222022145454,
+      "r2_raw": 0.8372740703113601,
+      "mae_ipc": 0.19313589989919358
+    },
+    "test": {
+      "r2_log1p": 0.8382838188244819,
+      "r2_raw": 0.8138648154591898,
+      "mae_ipc": 0.20593845102201722
+    }
+  },
+  "probe5000_source_and_assembly_counts_ridge": {
+    "n_train": 5000,
+    "features": [
+      "src_lines",
+      "src_chars",
+      "src_identifiers",
+      "src_numbers",
+      "src_loops",
+      "src_branches",
+      "src_calls",
+      "src_pointer_stars",
+      "src_arithmetic",
+      "src_array_access",
+      "src_return",
+      "asm_instructions",
+      "asm_chars",
+      "asm_memory_operands",
+      "asm_register_operands",
+      "asm_immediates",
+      "asm_move",
+      "asm_load_store",
+      "asm_branch",
+      "asm_call",
+      "asm_return",
+      "asm_compare",
+      "asm_add_sub",
+      "asm_multiply",
+      "asm_divide",
+      "asm_logic",
+      "asm_shift",
+      "asm_conditional_move",
+      "asm_setcc",
+      "asm_vector",
+      "asm_scalar_fp",
+      "asm_stack",
+      "asm_convert",
+      "asm_nop",
+      "asm_fraction_move",
+      "asm_fraction_load_store",
+      "asm_fraction_branch",
+      "asm_fraction_call",
+      "asm_fraction_return",
+      "asm_fraction_compare",
+      "asm_fraction_add_sub",
+      "asm_fraction_multiply",
+      "asm_fraction_divide",
+      "asm_fraction_logic",
+      "asm_fraction_shift",
+      "asm_fraction_conditional_move",
+      "asm_fraction_setcc",
+      "asm_fraction_vector",
+      "asm_fraction_scalar_fp",
+      "asm_fraction_stack",
+      "asm_fraction_convert",
+      "asm_fraction_nop"
+    ],
+    "selection": "highest validation r2_log1p, no test selection",
+    "selected": {
+      "alpha": 100.0
+    },
+    "validation_candidates": [
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 0.01
+        },
+        "r2_log1p": 0.6824263418507184
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 0.1
+        },
+        "r2_log1p": 0.6827242532050992
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 1.0
+        },
+        "r2_log1p": 0.6834352568905062
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 10.0
+        },
+        "r2_log1p": 0.6846530381891651
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 100.0
+        },
+        "r2_log1p": 0.6852069470894289
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 1000.0
+        },
+        "r2_log1p": 0.6691612387500139
+      }
+    ],
+    "val": {
+      "r2_log1p": 0.6852069470894289,
+      "r2_raw": 0.6298559636625243,
+      "mae_ipc": 0.3644751333719962
+    },
+    "test": {
+      "r2_log1p": 0.6782650443780531,
+      "r2_raw": 0.6115172792950544,
+      "mae_ipc": 0.3674416166600839
+    }
+  },
+  "probe5000_source_and_assembly_counts_hist_gradient_boosting": {
+    "n_train": 5000,
+    "features": [
+      "src_lines",
+      "src_chars",
+      "src_identifiers",
+      "src_numbers",
+      "src_loops",
+      "src_branches",
+      "src_calls",
+      "src_pointer_stars",
+      "src_arithmetic",
+      "src_array_access",
+      "src_return",
+      "asm_instructions",
+      "asm_chars",
+      "asm_memory_operands",
+      "asm_register_operands",
+      "asm_immediates",
+      "asm_move",
+      "asm_load_store",
+      "asm_branch",
+      "asm_call",
+      "asm_return",
+      "asm_compare",
+      "asm_add_sub",
+      "asm_multiply",
+      "asm_divide",
+      "asm_logic",
+      "asm_shift",
+      "asm_conditional_move",
+      "asm_setcc",
+      "asm_vector",
+      "asm_scalar_fp",
+      "asm_stack",
+      "asm_convert",
+      "asm_nop",
+      "asm_fraction_move",
+      "asm_fraction_load_store",
+      "asm_fraction_branch",
+      "asm_fraction_call",
+      "asm_fraction_return",
+      "asm_fraction_compare",
+      "asm_fraction_add_sub",
+      "asm_fraction_multiply",
+      "asm_fraction_divide",
+      "asm_fraction_logic",
+      "asm_fraction_shift",
+      "asm_fraction_conditional_move",
+      "asm_fraction_setcc",
+      "asm_fraction_vector",
+      "asm_fraction_scalar_fp",
+      "asm_fraction_stack",
+      "asm_fraction_convert",
+      "asm_fraction_nop"
+    ],
+    "selection": "highest validation r2_log1p, no test selection",
+    "selected": {
+      "max_leaf_nodes": 31,
+      "max_iter": 200,
+      "l2_regularization": 1.0
+    },
+    "validation_candidates": [
+      {
+        "family": "hist_gradient_boosting",
+        "config": {
+          "max_leaf_nodes": 15,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        },
+        "r2_log1p": 0.8640655168950377
+      },
+      {
+        "family": "hist_gradient_boosting",
+        "config": {
+          "max_leaf_nodes": 31,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        },
+        "r2_log1p": 0.8668732094499367
+      }
+    ],
+    "val": {
+      "r2_log1p": 0.8668732094499367,
+      "r2_raw": 0.8543817531840403,
+      "mae_ipc": 0.18183608162161574
+    },
+    "test": {
+      "r2_log1p": 0.850927677865835,
+      "r2_raw": 0.8299767415058914,
+      "mae_ipc": 0.1968442621059221
+    }
+  },
+  "full_train_source_counts_ridge": {
+    "n_train": 309913,
+    "features": [
+      "src_lines",
+      "src_chars",
+      "src_identifiers",
+      "src_numbers",
+      "src_loops",
+      "src_branches",
+      "src_calls",
+      "src_pointer_stars",
+      "src_arithmetic",
+      "src_array_access",
+      "src_return"
+    ],
+    "selection": "highest validation r2_log1p, no test selection",
+    "selected": {
+      "alpha": 1000.0
+    },
+    "validation_candidates": [
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 0.01
+        },
+        "r2_log1p": 0.07852684475565297
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 0.1
+        },
+        "r2_log1p": 0.07852689688102754
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 1.0
+        },
+        "r2_log1p": 0.07852741798991802
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 10.0
+        },
+        "r2_log1p": 0.07853261462098104
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 100.0
+        },
+        "r2_log1p": 0.07858316233435947
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 1000.0
+        },
+        "r2_log1p": 0.07896981295288807
+      }
+    ],
+    "val": {
+      "r2_log1p": 0.07896981295288807,
+      "r2_raw": 0.039521669764004175,
+      "mae_ipc": 0.642981614120974
+    },
+    "test": {
+      "r2_log1p": 0.06702953236643516,
+      "r2_raw": 0.027437480851012275,
+      "mae_ipc": 0.6341992853742732
+    }
+  },
+  "full_train_source_counts_hist_gradient_boosting": {
+    "n_train": 309913,
+    "features": [
+      "src_lines",
+      "src_chars",
+      "src_identifiers",
+      "src_numbers",
+      "src_loops",
+      "src_branches",
+      "src_calls",
+      "src_pointer_stars",
+      "src_arithmetic",
+      "src_array_access",
+      "src_return"
+    ],
+    "selection": "highest validation r2_log1p, no test selection",
+    "selected": {
+      "max_leaf_nodes": 31,
+      "max_iter": 200,
+      "l2_regularization": 1.0
+    },
+    "validation_candidates": [
+      {
+        "family": "hist_gradient_boosting",
+        "config": {
+          "max_leaf_nodes": 15,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        },
+        "r2_log1p": 0.5098579481524685
+      },
+      {
+        "family": "hist_gradient_boosting",
+        "config": {
+          "max_leaf_nodes": 31,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        },
+        "r2_log1p": 0.5402952743893426
+      }
+    ],
+    "val": {
+      "r2_log1p": 0.5402952743893426,
+      "r2_raw": 0.5596030731004571,
+      "mae_ipc": 0.3985398745094267
+    },
+    "test": {
+      "r2_log1p": 0.5854345528187332,
+      "r2_raw": 0.5970551394367196,
+      "mae_ipc": 0.37624231649903533
+    }
+  },
+  "full_train_assembly_length_ridge": {
+    "n_train": 309913,
+    "features": [
+      "asm_instructions"
+    ],
+    "selection": "highest validation r2_log1p, no test selection",
+    "selected": {
+      "alpha": 1000.0
+    },
+    "validation_candidates": [
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 0.01
+        },
+        "r2_log1p": -0.01593849029554062
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 0.1
+        },
+        "r2_log1p": -0.015938483402999193
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 1.0
+        },
+        "r2_log1p": -0.015938414477950413
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 10.0
+        },
+        "r2_log1p": -0.01593772526396542
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 100.0
+        },
+        "r2_log1p": -0.015930836772671597
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 1000.0
+        },
+        "r2_log1p": -0.015862315079437472
+      }
+    ],
+    "val": {
+      "r2_log1p": -0.015862315079437472,
+      "r2_raw": -0.04160779809989967,
+      "mae_ipc": 0.6689952252594753
+    },
+    "test": {
+      "r2_log1p": -0.022031044070359274,
+      "r2_raw": -0.047447484032360876,
+      "mae_ipc": 0.660625827070154
+    }
+  },
+  "full_train_assembly_length_hist_gradient_boosting": {
+    "n_train": 309913,
+    "features": [
+      "asm_instructions"
+    ],
+    "selection": "highest validation r2_log1p, no test selection",
+    "selected": {
+      "max_leaf_nodes": 31,
+      "max_iter": 200,
+      "l2_regularization": 1.0
+    },
+    "validation_candidates": [
+      {
+        "family": "hist_gradient_boosting",
+        "config": {
+          "max_leaf_nodes": 15,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        },
+        "r2_log1p": 0.1714215172918938
+      },
+      {
+        "family": "hist_gradient_boosting",
+        "config": {
+          "max_leaf_nodes": 31,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        },
+        "r2_log1p": 0.1714300956742728
+      }
+    ],
+    "val": {
+      "r2_log1p": 0.1714300956742728,
+      "r2_raw": 0.13310613343499123,
+      "mae_ipc": 0.5654409099300822
+    },
+    "test": {
+      "r2_log1p": 0.14016592322645893,
+      "r2_raw": 0.11185051212240105,
+      "mae_ipc": 0.5652023409071689
+    }
+  },
+  "full_train_assembly_counts_ridge": {
+    "n_train": 309913,
+    "features": [
+      "asm_instructions",
+      "asm_chars",
+      "asm_memory_operands",
+      "asm_register_operands",
+      "asm_immediates",
+      "asm_move",
+      "asm_load_store",
+      "asm_branch",
+      "asm_call",
+      "asm_return",
+      "asm_compare",
+      "asm_add_sub",
+      "asm_multiply",
+      "asm_divide",
+      "asm_logic",
+      "asm_shift",
+      "asm_conditional_move",
+      "asm_setcc",
+      "asm_vector",
+      "asm_scalar_fp",
+      "asm_stack",
+      "asm_convert",
+      "asm_nop",
+      "asm_fraction_move",
+      "asm_fraction_load_store",
+      "asm_fraction_branch",
+      "asm_fraction_call",
+      "asm_fraction_return",
+      "asm_fraction_compare",
+      "asm_fraction_add_sub",
+      "asm_fraction_multiply",
+      "asm_fraction_divide",
+      "asm_fraction_logic",
+      "asm_fraction_shift",
+      "asm_fraction_conditional_move",
+      "asm_fraction_setcc",
+      "asm_fraction_vector",
+      "asm_fraction_scalar_fp",
+      "asm_fraction_stack",
+      "asm_fraction_convert",
+      "asm_fraction_nop"
+    ],
+    "selection": "highest validation r2_log1p, no test selection",
+    "selected": {
+      "alpha": 0.01
+    },
+    "validation_candidates": [
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 0.01
+        },
+        "r2_log1p": 0.7026135766783288
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 0.1
+        },
+        "r2_log1p": 0.7026135762531487
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 1.0
+        },
+        "r2_log1p": 0.7026134485565708
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 10.0
+        },
+        "r2_log1p": 0.702602325464021
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 100.0
+        },
+        "r2_log1p": 0.7023213893130746
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 1000.0
+        },
+        "r2_log1p": 0.7015368239300325
+      }
+    ],
+    "val": {
+      "r2_log1p": 0.7026135766783288,
+      "r2_raw": 0.6502293874000564,
+      "mae_ipc": 0.357604275661825
+    },
+    "test": {
+      "r2_log1p": 0.6944099233225384,
+      "r2_raw": 0.6325255683492861,
+      "mae_ipc": 0.3611156829934291
+    }
+  },
+  "full_train_assembly_counts_hist_gradient_boosting": {
+    "n_train": 309913,
+    "features": [
+      "asm_instructions",
+      "asm_chars",
+      "asm_memory_operands",
+      "asm_register_operands",
+      "asm_immediates",
+      "asm_move",
+      "asm_load_store",
+      "asm_branch",
+      "asm_call",
+      "asm_return",
+      "asm_compare",
+      "asm_add_sub",
+      "asm_multiply",
+      "asm_divide",
+      "asm_logic",
+      "asm_shift",
+      "asm_conditional_move",
+      "asm_setcc",
+      "asm_vector",
+      "asm_scalar_fp",
+      "asm_stack",
+      "asm_convert",
+      "asm_nop",
+      "asm_fraction_move",
+      "asm_fraction_load_store",
+      "asm_fraction_branch",
+      "asm_fraction_call",
+      "asm_fraction_return",
+      "asm_fraction_compare",
+      "asm_fraction_add_sub",
+      "asm_fraction_multiply",
+      "asm_fraction_divide",
+      "asm_fraction_logic",
+      "asm_fraction_shift",
+      "asm_fraction_conditional_move",
+      "asm_fraction_setcc",
+      "asm_fraction_vector",
+      "asm_fraction_scalar_fp",
+      "asm_fraction_stack",
+      "asm_fraction_convert",
+      "asm_fraction_nop"
+    ],
+    "selection": "highest validation r2_log1p, no test selection",
+    "selected": {
+      "max_leaf_nodes": 31,
+      "max_iter": 200,
+      "l2_regularization": 1.0
+    },
+    "validation_candidates": [
+      {
+        "family": "hist_gradient_boosting",
+        "config": {
+          "max_leaf_nodes": 15,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        },
+        "r2_log1p": 0.8839638036930489
+      },
+      {
+        "family": "hist_gradient_boosting",
+        "config": {
+          "max_leaf_nodes": 31,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        },
+        "r2_log1p": 0.896886775590983
+      }
+    ],
+    "val": {
+      "r2_log1p": 0.896886775590983,
+      "r2_raw": 0.8958731953466674,
+      "mae_ipc": 0.1410665459436015
+    },
+    "test": {
+      "r2_log1p": 0.9058669072971319,
+      "r2_raw": 0.8959370327936266,
+      "mae_ipc": 0.15018716190395356
+    }
+  },
+  "full_train_source_and_assembly_counts_ridge": {
+    "n_train": 309913,
+    "features": [
+      "src_lines",
+      "src_chars",
+      "src_identifiers",
+      "src_numbers",
+      "src_loops",
+      "src_branches",
+      "src_calls",
+      "src_pointer_stars",
+      "src_arithmetic",
+      "src_array_access",
+      "src_return",
+      "asm_instructions",
+      "asm_chars",
+      "asm_memory_operands",
+      "asm_register_operands",
+      "asm_immediates",
+      "asm_move",
+      "asm_load_store",
+      "asm_branch",
+      "asm_call",
+      "asm_return",
+      "asm_compare",
+      "asm_add_sub",
+      "asm_multiply",
+      "asm_divide",
+      "asm_logic",
+      "asm_shift",
+      "asm_conditional_move",
+      "asm_setcc",
+      "asm_vector",
+      "asm_scalar_fp",
+      "asm_stack",
+      "asm_convert",
+      "asm_nop",
+      "asm_fraction_move",
+      "asm_fraction_load_store",
+      "asm_fraction_branch",
+      "asm_fraction_call",
+      "asm_fraction_return",
+      "asm_fraction_compare",
+      "asm_fraction_add_sub",
+      "asm_fraction_multiply",
+      "asm_fraction_divide",
+      "asm_fraction_logic",
+      "asm_fraction_shift",
+      "asm_fraction_conditional_move",
+      "asm_fraction_setcc",
+      "asm_fraction_vector",
+      "asm_fraction_scalar_fp",
+      "asm_fraction_stack",
+      "asm_fraction_convert",
+      "asm_fraction_nop"
+    ],
+    "selection": "highest validation r2_log1p, no test selection",
+    "selected": {
+      "alpha": 10.0
+    },
+    "validation_candidates": [
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 0.01
+        },
+        "r2_log1p": 0.7027610012423864
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 0.1
+        },
+        "r2_log1p": 0.702761351005307
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 1.0
+        },
+        "r2_log1p": 0.7027646958320514
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 10.0
+        },
+        "r2_log1p": 0.7027857239075994
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 100.0
+        },
+        "r2_log1p": 0.702697793401759
+      },
+      {
+        "family": "ridge",
+        "config": {
+          "alpha": 1000.0
+        },
+        "r2_log1p": 0.7022941847626312
+      }
+    ],
+    "val": {
+      "r2_log1p": 0.7027857239075994,
+      "r2_raw": 0.653044880797367,
+      "mae_ipc": 0.35881393205055034
+    },
+    "test": {
+      "r2_log1p": 0.693076746435753,
+      "r2_raw": 0.633568087643555,
+      "mae_ipc": 0.3625299067842346
+    }
+  },
+  "full_train_source_and_assembly_counts_hist_gradient_boosting": {
+    "n_train": 309913,
+    "features": [
+      "src_lines",
+      "src_chars",
+      "src_identifiers",
+      "src_numbers",
+      "src_loops",
+      "src_branches",
+      "src_calls",
+      "src_pointer_stars",
+      "src_arithmetic",
+      "src_array_access",
+      "src_return",
+      "asm_instructions",
+      "asm_chars",
+      "asm_memory_operands",
+      "asm_register_operands",
+      "asm_immediates",
+      "asm_move",
+      "asm_load_store",
+      "asm_branch",
+      "asm_call",
+      "asm_return",
+      "asm_compare",
+      "asm_add_sub",
+      "asm_multiply",
+      "asm_divide",
+      "asm_logic",
+      "asm_shift",
+      "asm_conditional_move",
+      "asm_setcc",
+      "asm_vector",
+      "asm_scalar_fp",
+      "asm_stack",
+      "asm_convert",
+      "asm_nop",
+      "asm_fraction_move",
+      "asm_fraction_load_store",
+      "asm_fraction_branch",
+      "asm_fraction_call",
+      "asm_fraction_return",
+      "asm_fraction_compare",
+      "asm_fraction_add_sub",
+      "asm_fraction_multiply",
+      "asm_fraction_divide",
+      "asm_fraction_logic",
+      "asm_fraction_shift",
+      "asm_fraction_conditional_move",
+      "asm_fraction_setcc",
+      "asm_fraction_vector",
+      "asm_fraction_scalar_fp",
+      "asm_fraction_stack",
+      "asm_fraction_convert",
+      "asm_fraction_nop"
+    ],
+    "selection": "highest validation r2_log1p, no test selection",
+    "selected": {
+      "max_leaf_nodes": 31,
+      "max_iter": 200,
+      "l2_regularization": 1.0
+    },
+    "validation_candidates": [
+      {
+        "family": "hist_gradient_boosting",
+        "config": {
+          "max_leaf_nodes": 15,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        },
+        "r2_log1p": 0.8959392690689937
+      },
+      {
+        "family": "hist_gradient_boosting",
+        "config": {
+          "max_leaf_nodes": 31,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        },
+        "r2_log1p": 0.910321366858901
+      }
+    ],
+    "val": {
+      "r2_log1p": 0.910321366858901,
+      "r2_raw": 0.9061909575433242,
+      "mae_ipc": 0.13465751047294114
+    },
+    "test": {
+      "r2_log1p": 0.9181009749472079,
+      "r2_raw": 0.9096395733766539,
+      "mae_ipc": 0.14107038511750838
+    }
+  }
+}

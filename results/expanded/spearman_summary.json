@@ -1,0 +1,196 @@
+{
+  "target": "static IPC; not runtime ranking",
+  "summary": {
+    "compact_ipc": {
+      "n_seeds": 3,
+      "mean": 0.6986455515459734,
+      "sample_sd": 0.010979877798766507,
+      "pending_seed44": false
+    },
+    "compact_joint": {
+      "n_seeds": 3,
+      "mean": 0.7916438465853934,
+      "sample_sd": 0.0028740072961014273,
+      "pending_seed44": false
+    },
+    "compact_bpe_joint": {
+      "n_seeds": 3,
+      "mean": 0.7802860096902827,
+      "sample_sd": 0.003762857058366263,
+      "pending_seed44": false
+    },
+    "codebert_ipc": {
+      "n_seeds": 3,
+      "mean": 0.8559205373572938,
+      "sample_sd": 0.007707915517474051,
+      "pending_seed44": false
+    },
+    "codebert_joint": {
+      "n_seeds": 3,
+      "mean": 0.8635249164367471,
+      "sample_sd": 0.00231072631796985,
+      "pending_seed44": false
+    },
+    "unixcoder_ipc": {
+      "n_seeds": 3,
+      "mean": 0.8828342888171103,
+      "sample_sd": 0.0020228793282609024,
+      "pending_seed44": false
+    },
+    "unixcoder_joint": {
+      "n_seeds": 3,
+      "mean": 0.8808918584866182,
+      "sample_sd": 0.004786357206061106,
+      "pending_seed44": false
+    }
+  },
+  "per_run": [
+    {
+      "condition": "compact_ipc",
+      "run": "source_only_seed42",
+      "n": 2000,
+      "spearman": 0.7072333573482903,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ispass_replication_20261102/package/results/supervision/source_only_seed42/ablation_test_predictions.csv"
+    },
+    {
+      "condition": "compact_ipc",
+      "run": "source_only_seed43",
+      "n": 2000,
+      "spearman": 0.6862742164970272,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ispass_replication_20261102/package/results/supervision/source_only_seed43/ablation_test_predictions.csv"
+    },
+    {
+      "condition": "compact_ipc",
+      "run": "source_only_seed44",
+      "n": 2000,
+      "spearman": 0.7024290807926028,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ispass_replication_20261102/package/results/supervision/source_only_seed44/ablation_test_predictions.csv"
+    },
+    {
+      "condition": "compact_joint",
+      "run": "IA_seed42",
+      "n": 2000,
+      "spearman": 0.7949410213951512,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed42/tuned_test_predictions.csv"
+    },
+    {
+      "condition": "compact_joint",
+      "run": "IA_seed43",
+      "n": 2000,
+      "spearman": 0.7903214441640263,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed43/tuned_test_predictions.csv"
+    },
+    {
+      "condition": "compact_joint",
+      "run": "IA_seed44",
+      "n": 2000,
+      "spearman": 0.7896690741970029,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed44/tuned_test_predictions.csv"
+    },
+    {
+      "condition": "compact_bpe_joint",
+      "run": "BPE_seed42",
+      "n": 2000,
+      "spearman": 0.7779182123320723,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/BPE_seed42/tuned_test_predictions.csv"
+    },
+    {
+      "condition": "compact_bpe_joint",
+      "run": "BPE_seed43",
+      "n": 2000,
+      "spearman": 0.7846249432336225,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/BPE_seed43/tuned_test_predictions.csv"
+    },
+    {
+      "condition": "compact_bpe_joint",
+      "run": "BPE_seed44",
+      "n": 2000,
+      "spearman": 0.7783148735051535,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/BPE_seed44/tuned_test_predictions.csv"
+    },
+    {
+      "condition": "codebert_ipc",
+      "run": "codebert_ipc_lr5e-05_aw0_seed42",
+      "n": 2000,
+      "spearman": 0.8630164835157036,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_equal_steps_20261108/runs/codebert_ipc_lr5e-05_aw0_seed42/eval_full/test_predictions.csv"
+    },
+    {
+      "condition": "codebert_ipc",
+      "run": "codebert_ipc_lr5e-05_aw0_seed43",
+      "n": 2000,
+      "spearman": 0.8477198636953919,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_equal_steps_20261108/runs/codebert_ipc_lr5e-05_aw0_seed43/eval_full/test_predictions.csv"
+    },
+    {
+      "condition": "codebert_ipc",
+      "run": "codebert_ipc_lr5e-05_aw0_seed44",
+      "n": 2000,
+      "spearman": 0.8570252648607859,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_equal_steps_20261108/runs/codebert_ipc_lr5e-05_aw0_seed44/eval_full/test_predictions.csv"
+    },
+    {
+      "condition": "codebert_joint",
+      "run": "codebert_joint_lr5e-05_aw0_seed42",
+      "n": 2000,
+      "spearman": 0.8661264423602203,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_equal_steps_20261108/runs/codebert_joint_lr5e-05_aw0_seed42/eval_full/test_predictions.csv"
+    },
+    {
+      "condition": "codebert_joint",
+      "run": "codebert_joint_lr5e-05_aw0_seed43",
+      "n": 2000,
+      "spearman": 0.8627374791695565,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_equal_steps_20261108/runs/codebert_joint_lr5e-05_aw0_seed43/eval_full/test_predictions.csv"
+    },
+    {
+      "condition": "codebert_joint",
+      "run": "codebert_joint_lr5e-05_aw0_seed44",
+      "n": 2000,
+      "spearman": 0.8617108277804645,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_equal_steps_20261108/runs/codebert_joint_lr5e-05_aw0_seed44/eval_full/test_predictions.csv"
+    },
+    {
+      "condition": "unixcoder_ipc",
+      "run": "unixcoder_ipc_lr5e-05_aw0_seed42",
+      "n": 2000,
+      "spearman": 0.8814534928815867,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_equal_steps_20261108/runs/unixcoder_ipc_lr5e-05_aw0_seed42/eval_full/test_predictions.csv"
+    },
+    {
+      "condition": "unixcoder_ipc",
+      "run": "unixcoder_ipc_lr5e-05_aw0_seed43",
+      "n": 2000,
+      "spearman": 0.8818930947050201,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_equal_steps_20261108/runs/unixcoder_ipc_lr5e-05_aw0_seed43/eval_full/test_predictions.csv"
+    },
+    {
+      "condition": "unixcoder_ipc",
+      "run": "unixcoder_ipc_lr5e-05_aw0_seed44",
+      "n": 2000,
+      "spearman": 0.8851562788647244,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_equal_steps_20261108/runs/unixcoder_ipc_lr5e-05_aw0_seed44/eval_full/test_predictions.csv"
+    },
+    {
+      "condition": "unixcoder_joint",
+      "run": "unixcoder_joint_lr5e-05_aw1_seed42",
+      "n": 2000,
+      "spearman": 0.8859365767328274,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_equal_steps_20261108/runs/unixcoder_joint_lr5e-05_aw1_seed42/eval_full/test_predictions.csv"
+    },
+    {
+      "condition": "unixcoder_joint",
+      "run": "unixcoder_joint_lr5e-05_aw1_seed43",
+      "n": 2000,
+      "spearman": 0.8803245770259828,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_equal_steps_20261108/runs/unixcoder_joint_lr5e-05_aw1_seed43/eval_full/test_predictions.csv"
+    },
+    {
+      "condition": "unixcoder_joint",
+      "run": "unixcoder_joint_lr5e-05_aw1_seed44",
+      "n": 2000,
+      "spearman": 0.8764144217010444,
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_equal_steps_20261108/runs/unixcoder_joint_lr5e-05_aw1_seed44/eval_full/test_predictions.csv"
+    }
+  ]
+}

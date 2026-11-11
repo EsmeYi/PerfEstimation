@@ -1,0 +1,71 @@
+{
+  "sources": [
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed42/tuned_test_predictions.csv",
+      "sha256": "c71023091217001323d79c8d85ba8ec5b2896082453a7aa13119d8d851ce4e21"
+    },
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed43/tuned_test_predictions.csv",
+      "sha256": "143e4e3d444397ffb1d282d7597e3fbf5c17a1e9e2aad1abd96d9d95896722e8"
+    },
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed44/tuned_test_predictions.csv",
+      "sha256": "b80d3de9520a16b90295f21e95a85b47314e5572793830820cb198ae026c5f92"
+    },
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed42/test_predictions.csv",
+      "sha256": "e53d972379aa42612ae4352669e0acd9e890f1cc81455b42bbe05d9df4a5e0ac"
+    },
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed43/test_predictions.csv",
+      "sha256": "4db982a6fbf5603dc6891c9cbdf9eba11dcfc0f8ba02ab709deaf00632797503"
+    },
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/codebert_lr5e-05_seed44/test_predictions.csv",
+      "sha256": "132d0b2862fd9e32853e72ab077d9e781faf60b3549b6052fb251fc0d461a7d5"
+    },
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed42/test_predictions.csv",
+      "sha256": "111294162e661a967b17458452da6d430b5101572d63c5db3fadacd085a78583"
+    },
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed43/test_predictions.csv",
+      "sha256": "8f50deb91366fbc68402971016ad8adc06fd3dec1518aa7c405d43058165aa85"
+    },
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/pretrained_ipc_30min_20261028/runs/unixcoder_lr5e-05_seed44/test_predictions.csv",
+      "sha256": "46ec872c52de4dba7e3d0f9ff2477cb68f399b1bf9b4d25603493c01da1eed1b"
+    }
+  ],
+  "models": [
+    "Ours (IA)",
+    "CodeBERT",
+    "UniXcoder"
+  ],
+  "functions_per_seed": 2000,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "prediction_pairs_per_panel": 6000,
+  "axes": "log1p actual IPC and unmodified probe log1p prediction",
+  "axis_limits": [
+    0.0,
+    2.0
+  ],
+  "binning": "hexbin gridsize35 common extent",
+  "density": "logarithmic count, same scale in all panels",
+  "count_range": [
+    1,
+    338.0
+  ],
+  "exclusions": null,
+  "aggregation": "density counts only; no averaging predictions",
+  "uncertainty": "sample SD over individual-seed R2; no pooled R2",
+  "width_inches": 7.16,
+  "height_inches": 2.72,
+  "png_dpi": 400,
+  "matplotlib": "3.10.9",
+  "numpy": "2.4.4"
+}

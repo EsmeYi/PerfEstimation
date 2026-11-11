@@ -1,0 +1,581 @@
+{
+  "n_measured": 2137,
+  "n_stable_spread_lt_10pct": 2131,
+  "variant_counts": {
+    "0": 1939,
+    "1": 198
+  },
+  "label_reproduced_fraction": 1.0,
+  "subsets": {
+    "all_stable": {
+      "n": 2131,
+      "hw_ipc_mean": 2.0538074424005814,
+      "hw_ipc_sd": 0.9762041053906201,
+      "entries": [
+        {
+          "predictor": "llvm-mca skylake (paper label)",
+          "n": 2131,
+          "spearman": 0.6524307773882477,
+          "spearman_ci95": [
+            0.6227881371500154,
+            0.6818598669248257
+          ],
+          "pearson_log1p": 0.5724901306796345,
+          "mae_ipc": 0.8668791593280346
+        },
+        {
+          "predictor": "llvm-mca znver4 (matches host)",
+          "n": 2131,
+          "spearman": 0.4888570876632346,
+          "spearman_ci95": [
+            0.4486229477752789,
+            0.5229329090011434
+          ],
+          "pearson_log1p": 0.4419999355702831,
+          "mae_ipc": 1.4971977046901561
+        },
+        {
+          "predictor": "llvm-mca znver2",
+          "n": 2131,
+          "spearman": 0.668686801560757,
+          "spearman_ci95": [
+            0.6378525267198688,
+            0.6970008770895211
+          ],
+          "pearson_log1p": 0.5447183602209422,
+          "mae_ipc": 0.7802373447770149
+        },
+        {
+          "predictor": "static instruction count",
+          "n": 2131,
+          "spearman": 0.8447362493471455,
+          "spearman_ci95": [
+            0.8297260366607172,
+            0.8586951113823429
+          ],
+          "pearson_log1p": 0.806325796883754,
+          "mae_ipc": 9.329904775386984
+        },
+        {
+          "predictor": "source model (IA joint, mean of 3 seeds)",
+          "n": 2131,
+          "spearman": 0.6384482958765791,
+          "spearman_ci95": [
+            0.6069523786177984,
+            0.6657825365842938
+          ],
+          "pearson_log1p": 0.5804611452307031,
+          "mae_ipc": 0.7912484566313445
+        },
+        {
+          "predictor": "source-count GBM",
+          "n": 233,
+          "spearman": 0.6685140094316331,
+          "spearman_ci95": [
+            0.5925279138245209,
+            0.7280364597264695
+          ],
+          "pearson_log1p": 0.6462852814945267,
+          "mae_ipc": 0.8278542988964748
+        },
+        {
+          "predictor": "assembly-count GBM",
+          "n": 233,
+          "spearman": 0.6449436563623739,
+          "spearman_ci95": [
+            0.5503235591895533,
+            0.7266992508189107
+          ],
+          "pearson_log1p": 0.5794017594377288,
+          "mae_ipc": 0.8928726984335495
+        },
+        {
+          "predictor": "assembly-only transformer",
+          "n": 233,
+          "spearman": 0.6096809516275739,
+          "spearman_ci95": [
+            0.5126057770193244,
+            0.697746461899967
+          ],
+          "pearson_log1p": 0.5531509464273489,
+          "mae_ipc": 0.9222656136788034
+        }
+      ]
+    },
+    "static_instr_ge_10": {
+      "n": 606,
+      "hw_ipc_mean": 3.076352458861426,
+      "hw_ipc_sd": 1.1039866902525484,
+      "entries": [
+        {
+          "predictor": "llvm-mca skylake (paper label)",
+          "n": 606,
+          "spearman": 0.04951891878368069,
+          "spearman_ci95": [
+            -0.023928303278605886,
+            0.13494535345408165
+          ],
+          "pearson_log1p": 0.06697045000154196,
+          "mae_ipc": 1.2893501664041336
+        },
+        {
+          "predictor": "llvm-mca znver4 (matches host)",
+          "n": 606,
+          "spearman": 0.08958979956946278,
+          "spearman_ci95": [
+            0.006377359943260788,
+            0.1693092263722136
+          ],
+          "pearson_log1p": 0.10626423804150918,
+          "mae_ipc": 1.7134971436932867
+        },
+        {
+          "predictor": "llvm-mca znver2",
+          "n": 606,
+          "spearman": 0.25646720679859203,
+          "spearman_ci95": [
+            0.17488494190346793,
+            0.33738229061349256
+          ],
+          "pearson_log1p": 0.16641781078026932,
+          "mae_ipc": 0.9574161823056327
+        },
+        {
+          "predictor": "static instruction count",
+          "n": 606,
+          "spearman": 0.3341698368271831,
+          "spearman_ci95": [
+            0.25113008786607927,
+            0.405939347288053
+          ],
+          "pearson_log1p": 0.385447089785266,
+          "mae_ipc": 27.974802656650127
+        },
+        {
+          "predictor": "source model (IA joint, mean of 3 seeds)",
+          "n": 606,
+          "spearman": 0.005007773572130258,
+          "spearman_ci95": [
+            -0.0732049848143702,
+            0.08315286175747356
+          ],
+          "pearson_log1p": 0.032684871822202505,
+          "mae_ipc": 1.1623778530812092
+        },
+        {
+          "predictor": "source-count GBM",
+          "n": 104,
+          "spearman": -0.08982740271930684,
+          "spearman_ci95": [
+            -0.29884421342986534,
+            0.10349279870651924
+          ],
+          "pearson_log1p": -0.005946063493942239,
+          "mae_ipc": 1.1809055577332541
+        },
+        {
+          "predictor": "assembly-count GBM",
+          "n": 104,
+          "spearman": 0.02851282543706247,
+          "spearman_ci95": [
+            -0.1691953220512464,
+            0.22603173399514004
+          ],
+          "pearson_log1p": 0.08726668131598536,
+          "mae_ipc": 1.2318341862369275
+        },
+        {
+          "predictor": "assembly-only transformer",
+          "n": 104,
+          "spearman": 0.08544245557070713,
+          "spearman_ci95": [
+            -0.12004381713172634,
+            0.27331008272938234
+          ],
+          "pearson_log1p": 0.10407191569380483,
+          "mae_ipc": 1.2572530496421275
+        }
+      ]
+    },
+    "straight_line_no_branch": {
+      "n": 1463,
+      "hw_ipc_mean": 1.7086260411626486,
+      "hw_ipc_sd": 0.6815934846458367,
+      "entries": [
+        {
+          "predictor": "llvm-mca skylake (paper label)",
+          "n": 1463,
+          "spearman": 0.6378668307923137,
+          "spearman_ci95": [
+            0.5991299075271042,
+            0.6770925868889672
+          ],
+          "pearson_log1p": 0.5547208900520882,
+          "mae_ipc": 0.6575503179459842
+        },
+        {
+          "predictor": "llvm-mca znver4 (matches host)",
+          "n": 1463,
+          "spearman": 0.3483118981679319,
+          "spearman_ci95": [
+            0.2982358714787845,
+            0.39536683424806823
+          ],
+          "pearson_log1p": 0.2896840803517873,
+          "mae_ipc": 1.3074661188444194
+        },
+        {
+          "predictor": "llvm-mca znver2",
+          "n": 1463,
+          "spearman": 0.626127635253469,
+          "spearman_ci95": [
+            0.5834001729780418,
+            0.66304688476425
+          ],
+          "pearson_log1p": 0.49705597962596115,
+          "mae_ipc": 0.7109098655356083
+        },
+        {
+          "predictor": "static instruction count",
+          "n": 1463,
+          "spearman": 0.820506603021944,
+          "spearman_ci95": [
+            0.7956077752035556,
+            0.8442907449023714
+          ],
+          "pearson_log1p": 0.819954468681727,
+          "mae_ipc": 2.6731785679975113
+        },
+        {
+          "predictor": "source model (IA joint, mean of 3 seeds)",
+          "n": 1463,
+          "spearman": 0.5842318146007949,
+          "spearman_ci95": [
+            0.5449475544009009,
+            0.6222256457340213
+          ],
+          "pearson_log1p": 0.5498743109574045,
+          "mae_ipc": 0.6171285436591697
+        },
+        {
+          "predictor": "source-count GBM",
+          "n": 130,
+          "spearman": 0.6084473071064399,
+          "spearman_ci95": [
+            0.47442698061209104,
+            0.7118625872229865
+          ],
+          "pearson_log1p": 0.6056883361578618,
+          "mae_ipc": 0.5521211914765753
+        },
+        {
+          "predictor": "assembly-count GBM",
+          "n": 130,
+          "spearman": 0.6083176976335474,
+          "spearman_ci95": [
+            0.4572560941701723,
+            0.7252287278661733
+          ],
+          "pearson_log1p": 0.5561123450704719,
+          "mae_ipc": 0.6219712455274491
+        },
+        {
+          "predictor": "assembly-only transformer",
+          "n": 130,
+          "spearman": 0.5507401149160741,
+          "spearman_ci95": [
+            0.4043558636204633,
+            0.6784250116113151
+          ],
+          "pearson_log1p": 0.5307054600496008,
+          "mae_ipc": 0.6442407847119149
+        }
+      ]
+    },
+    "with_branches": {
+      "n": 668,
+      "hw_ipc_mean": 2.8097960502016233,
+      "hw_ipc_sd": 1.0909479486524085,
+      "entries": [
+        {
+          "predictor": "llvm-mca skylake (paper label)",
+          "n": 668,
+          "spearman": 0.1669809626696205,
+          "spearman_ci95": [
+            0.09321734666024474,
+            0.23947591656418168
+          ],
+          "pearson_log1p": 0.10473263521215563,
+          "mae_ipc": 1.3253343912770463
+        },
+        {
+          "predictor": "llvm-mca znver4 (matches host)",
+          "n": 668,
+          "spearman": 0.17205562592269996,
+          "spearman_ci95": [
+            0.09766574331154522,
+            0.24949508616084215
+          ],
+          "pearson_log1p": 0.13075686465547826,
+          "mae_ipc": 1.9127326000379303
+        },
+        {
+          "predictor": "llvm-mca znver2",
+          "n": 668,
+          "spearman": 0.3417616587765805,
+          "spearman_ci95": [
+            0.2644577129286521,
+            0.40997173923145547
+          ],
+          "pearson_log1p": 0.22861932614625932,
+          "mae_ipc": 0.9320728270078202
+        },
+        {
+          "predictor": "static instruction count",
+          "n": 668,
+          "spearman": 0.5323906521466761,
+          "spearman_ci95": [
+            0.46247748860013943,
+            0.5862380179526067
+          ],
+          "pearson_log1p": 0.5663034337581057,
+          "mae_ipc": 23.908932382289375
+        },
+        {
+          "predictor": "source model (IA joint, mean of 3 seeds)",
+          "n": 668,
+          "spearman": 0.15116384138622355,
+          "spearman_ci95": [
+            0.07075178645383978,
+            0.22748815039310485
+          ],
+          "pearson_log1p": 0.07474404881041327,
+          "mae_ipc": 1.1725919187245957
+        },
+        {
+          "predictor": "source-count GBM",
+          "n": 103,
+          "spearman": 0.002031806000966481,
+          "spearman_ci95": [
+            -0.19496428994522688,
+            0.19399271148960234
+          ],
+          "pearson_log1p": 0.07287887900662268,
+          "mae_ipc": 1.1758669587468333
+        },
+        {
+          "predictor": "assembly-count GBM",
+          "n": 103,
+          "spearman": 0.17840550901121022,
+          "spearman_ci95": [
+            -0.025156084480714602,
+            0.37421053962691286
+          ],
+          "pearson_log1p": 0.138858379328658,
+          "mae_ipc": 1.234787153557754
+        },
+        {
+          "predictor": "assembly-only transformer",
+          "n": 103,
+          "spearman": 0.1864538944778808,
+          "spearman_ci95": [
+            -0.0062705357300591015,
+            0.37785665352260067
+          ],
+          "pearson_log1p": 0.09427934271478249,
+          "mae_ipc": 1.273170737617595
+        }
+      ]
+    },
+    "first2000_test_with_model_preds": {
+      "n": 233,
+      "hw_ipc_mean": 2.305786260927877,
+      "hw_ipc_sd": 1.288499520497205,
+      "entries": [
+        {
+          "predictor": "llvm-mca skylake (paper label)",
+          "n": 233,
+          "spearman": 0.5525453897458166,
+          "spearman_ci95": [
+            0.44965297466777027,
+            0.6537536546614626
+          ],
+          "pearson_log1p": 0.5024946417494673,
+          "mae_ipc": 1.0231776537998851
+        },
+        {
+          "predictor": "llvm-mca znver4 (matches host)",
+          "n": 233,
+          "spearman": 0.45262732921192,
+          "spearman_ci95": [
+            0.3428146224647639,
+            0.5496657412806695
+          ],
+          "pearson_log1p": 0.4120193027447703,
+          "mae_ipc": 1.5192783000998435
+        },
+        {
+          "predictor": "llvm-mca znver2",
+          "n": 233,
+          "spearman": 0.6200495055146564,
+          "spearman_ci95": [
+            0.5175078200310463,
+            0.7064394723975056
+          ],
+          "pearson_log1p": 0.4979067858364834,
+          "mae_ipc": 0.9261697705865045
+        },
+        {
+          "predictor": "static instruction count",
+          "n": 233,
+          "spearman": 0.8171434747369148,
+          "spearman_ci95": [
+            0.7717105608161833,
+            0.8551145809389227
+          ],
+          "pearson_log1p": 0.7834167177211696,
+          "mae_ipc": 18.901264509109396
+        },
+        {
+          "predictor": "source model (IA joint, mean of 3 seeds)",
+          "n": 233,
+          "spearman": 0.5798076875186787,
+          "spearman_ci95": [
+            0.48943004062315654,
+            0.6632599911291172
+          ],
+          "pearson_log1p": 0.5618124092372851,
+          "mae_ipc": 0.9177568034004631
+        },
+        {
+          "predictor": "source-count GBM",
+          "n": 233,
+          "spearman": 0.6685140094316331,
+          "spearman_ci95": [
+            0.5920279991516519,
+            0.7300559939287128
+          ],
+          "pearson_log1p": 0.6462852814945267,
+          "mae_ipc": 0.8278542988964748
+        },
+        {
+          "predictor": "assembly-count GBM",
+          "n": 233,
+          "spearman": 0.6449436563623739,
+          "spearman_ci95": [
+            0.5624615665891985,
+            0.7263621395451691
+          ],
+          "pearson_log1p": 0.5794017594377288,
+          "mae_ipc": 0.8928726984335495
+        },
+        {
+          "predictor": "assembly-only transformer",
+          "n": 233,
+          "spearman": 0.6096809516275739,
+          "spearman_ci95": [
+            0.5084645528753753,
+            0.6932880478992194
+          ],
+          "pearson_log1p": 0.5531509464273489,
+          "mae_ipc": 0.9222656136788034
+        }
+      ]
+    },
+    "first2000_and_instr_ge_10": {
+      "n": 104,
+      "hw_ipc_mean": 3.2957152608632447,
+      "hw_ipc_sd": 1.2648005475355277,
+      "entries": [
+        {
+          "predictor": "llvm-mca skylake (paper label)",
+          "n": 104,
+          "spearman": -0.000554808698198534,
+          "spearman_ci95": [
+            -0.18025797722774914,
+            0.18982238179760888
+          ],
+          "pearson_log1p": 0.05949400049312175,
+          "mae_ipc": 1.4424310383890533
+        },
+        {
+          "predictor": "llvm-mca znver4 (matches host)",
+          "n": 104,
+          "spearman": 0.12698251824442333,
+          "spearman_ci95": [
+            -0.0732938641381237,
+            0.3246845366826488
+          ],
+          "pearson_log1p": 0.22660172916203558,
+          "mae_ipc": 1.6552064264592674
+        },
+        {
+          "predictor": "llvm-mca znver2",
+          "n": 104,
+          "spearman": 0.24871492016792876,
+          "spearman_ci95": [
+            0.057344971180415434,
+            0.42588014108872313
+          ],
+          "pearson_log1p": 0.18714810547541272,
+          "mae_ipc": 1.139821371860692
+        },
+        {
+          "predictor": "static instruction count",
+          "n": 104,
+          "spearman": 0.3110101020064958,
+          "spearman_ci95": [
+            0.11264362226270763,
+            0.49372516787215287
+          ],
+          "pearson_log1p": 0.3250476800456905,
+          "mae_ipc": 40.185053969905994
+        },
+        {
+          "predictor": "source model (IA joint, mean of 3 seeds)",
+          "n": 104,
+          "spearman": 0.09492717093592641,
+          "spearman_ci95": [
+            -0.10861186947796692,
+            0.2907924851294541
+          ],
+          "pearson_log1p": 0.17177209836608387,
+          "mae_ipc": 1.2231708961362397
+        },
+        {
+          "predictor": "source-count GBM",
+          "n": 104,
+          "spearman": -0.08982740271930684,
+          "spearman_ci95": [
+            -0.27123140562863374,
+            0.0955022026247098
+          ],
+          "pearson_log1p": -0.005946063493942239,
+          "mae_ipc": 1.1809055577332541
+        },
+        {
+          "predictor": "assembly-count GBM",
+          "n": 104,
+          "spearman": 0.02851282543706247,
+          "spearman_ci95": [
+            -0.16582452044808824,
+            0.21856057532508327
+          ],
+          "pearson_log1p": 0.08726668131598536,
+          "mae_ipc": 1.2318341862369275
+        },
+        {
+          "predictor": "assembly-only transformer",
+          "n": 104,
+          "spearman": 0.08544245557070713,
+          "spearman_ci95": [
+            -0.11933029728780746,
+            0.26736205674132063
+          ],
+          "pearson_log1p": 0.10407191569380483,
+          "mae_ipc": 1.2572530496421275
+        }
+      ]
+    }
+  }
+}

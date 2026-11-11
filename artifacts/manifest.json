@@ -1,0 +1,233 @@
+{
+  "snapshot": "2026-11-10",
+  "release_tag": "v2026.11.10",
+  "base_url": "https://github.com/EsmeYi/PerfEstimation/releases/download/v2026.11.10",
+  "assets": [
+    {
+      "group": "compact",
+      "model": "compact_ia_joint",
+      "seed": 42,
+      "asset": "IA_seed42.pt.gz",
+      "asset_bytes": 40542462,
+      "asset_sha256": "9bfa4f95cd0eabd60e7be3aac3756fafce7792d8c7012ca5d613e7ead318cb4b",
+      "path": "checkpoints/IA_seed42.pt",
+      "bytes": 43663802,
+      "sha256": "e183c2ec1238b619db26ca14764b986d4d5e23d75a576c3bdac09635e3052c66",
+      "resumable": false
+    },
+    {
+      "group": "compact",
+      "model": "compact_ia_joint",
+      "seed": 43,
+      "asset": "IA_seed43.pt.gz",
+      "asset_bytes": 40544538,
+      "asset_sha256": "eb73e9cde0e2c5784995e4228506f51349637cd7415906268ebe23428c083c90",
+      "path": "checkpoints/IA_seed43.pt",
+      "bytes": 43663802,
+      "sha256": "cc3ca35efe49078113871322fdb715693d2de38b9b653348e5e9cb73cdc16e1c",
+      "resumable": false
+    },
+    {
+      "group": "compact",
+      "model": "compact_ia_joint",
+      "seed": 44,
+      "asset": "IA_seed44.pt.gz",
+      "asset_bytes": 40541704,
+      "asset_sha256": "4336d4574d85fe410ec8332220f42d311a1d04d320ef1d527497c60ab71a156e",
+      "path": "checkpoints/IA_seed44.pt",
+      "bytes": 43663802,
+      "sha256": "7b226be6f9d580be65d3ed934c070f68bc9959420e0d69282c874dd01b8a50ff",
+      "resumable": false
+    },
+    {
+      "group": "compact",
+      "model": "compact_bpe_joint",
+      "seed": 42,
+      "asset": "BPE_seed42.pt.gz",
+      "asset_bytes": 55886180,
+      "asset_sha256": "8bb08a0dd219c9d61047e62ad857c35c58b01e8845c089ea3eaecdd48ddaefee",
+      "path": "checkpoints/BPE_seed42.pt",
+      "bytes": 60181034,
+      "sha256": "2abb87843db27d113f25a73dab4503a76903f14515e532a5663c6a69013b6145",
+      "resumable": false
+    },
+    {
+      "group": "compact",
+      "model": "compact_bpe_joint",
+      "seed": 43,
+      "asset": "BPE_seed43.pt.gz",
+      "asset_bytes": 55884419,
+      "asset_sha256": "400b5c2e6972978948e465298de9ac59ef4bd25e981b060d604b332b15a46951",
+      "path": "checkpoints/BPE_seed43.pt",
+      "bytes": 60181034,
+      "sha256": "0d9dce27b6c6ab951bcffe867a168818c79755d68b5ad324707abde593702c74",
+      "resumable": false
+    },
+    {
+      "group": "compact",
+      "model": "compact_bpe_joint",
+      "seed": 44,
+      "asset": "BPE_seed44.pt.gz",
+      "asset_bytes": 55884077,
+      "asset_sha256": "334dd7642b35422f4fe6576aad940d8bc44c3d2e447d7efc3439ca522c720e84",
+      "path": "checkpoints/BPE_seed44.pt",
+      "bytes": 60181034,
+      "sha256": "993836a1eb7f27f9c583a4aa8c1665fcd17e2582c7b4df57dbd5edd4ebfbb517",
+      "resumable": false
+    },
+    {
+      "group": "compact",
+      "model": "compact_ipc",
+      "seed": 42,
+      "asset": "source_only_seed42.pt.gz",
+      "asset_bytes": 27938964,
+      "asset_sha256": "69a186f1e0d417832c6c126b1c87eaf7913022f8c9ad2d604cdc66a284028ba0",
+      "path": "checkpoints/source_only_seed42.pt",
+      "bytes": 30091834,
+      "sha256": "4ef6b127cfbbf3b60428fa3cc0c7b860a8d818d22586a83b48783b0f435f2ef5",
+      "resumable": false
+    },
+    {
+      "group": "compact",
+      "model": "compact_ipc",
+      "seed": 43,
+      "asset": "source_only_seed43.pt.gz",
+      "asset_bytes": 27937332,
+      "asset_sha256": "676cce80937ea4a926bbefe4dd19b8203a97db4b7d1abe7a65eda9e993eb28ad",
+      "path": "checkpoints/source_only_seed43.pt",
+      "bytes": 30091834,
+      "sha256": "ab00fb93f906cd5e5797870e433de7d3cd7e6d8fb8f1e153913010c83c3da101",
+      "resumable": false
+    },
+    {
+      "group": "compact",
+      "model": "compact_ipc",
+      "seed": 44,
+      "asset": "source_only_seed44.pt.gz",
+      "asset_bytes": 27937896,
+      "asset_sha256": "e85b08e5f3afc4e13d8d099f0083130073804c2bfee2d7ce97b34e168eebd5d2",
+      "path": "checkpoints/source_only_seed44.pt",
+      "bytes": 30091834,
+      "sha256": "1d37233042c34e4ee0a10c4da14aa64b542621449b8494281701cb5444ffc70c",
+      "resumable": false
+    },
+    {
+      "group": "compact",
+      "model": "compact_alignment_only",
+      "seed": 42,
+      "asset": "alignment_only_seed42.pt.gz",
+      "asset_bytes": 40540558,
+      "asset_sha256": "4e8a26779719d0a43177b12480c56288b90899b78a909b134cf570990833621a",
+      "path": "checkpoints/alignment_only_seed42.pt",
+      "bytes": 43664034,
+      "sha256": "f7c6088e523171752d4e407deffdcd18c809145910bf4a828ce9b30ae0c1ef15",
+      "resumable": false
+    },
+    {
+      "group": "compact",
+      "model": "compact_alignment_only",
+      "seed": 43,
+      "asset": "alignment_only_seed43.pt.gz",
+      "asset_bytes": 40540205,
+      "asset_sha256": "83524026e9acd2a254491b6e7eebf3a59f753f7ec4ad33aa5cf79f2574d5feeb",
+      "path": "checkpoints/alignment_only_seed43.pt",
+      "bytes": 43664034,
+      "sha256": "22007e45a60fd894413a905327e0845acaa5e8dfe4accc4abd4a7934574b1870",
+      "resumable": false
+    },
+    {
+      "group": "compact",
+      "model": "compact_alignment_only",
+      "seed": 44,
+      "asset": "alignment_only_seed44.pt.gz",
+      "asset_bytes": 40540609,
+      "asset_sha256": "b5d3313403e4d57d8ebe44e94e3d0f431c915fd1374e924e01517015f2756ce3",
+      "path": "checkpoints/alignment_only_seed44.pt",
+      "bytes": 43664034,
+      "sha256": "3c4b634635e9beee94900abeaac9460c4929f22930663fe021167a34b39c4d56",
+      "resumable": false
+    },
+    {
+      "group": "data",
+      "asset": "ipc-data.tar.gz",
+      "asset_bytes": 500314508,
+      "asset_sha256": "ab184c0d7228ada8b8891b6b63bf12a2f579091e9daa49eb3737ff0d619fb64b",
+      "path": "data/raw"
+    }
+  ],
+  "pending_assets": [
+    {
+      "model": "codebert_ipc",
+      "seed": 42,
+      "status": "not_uploaded",
+      "reason": "final9762-update exports requested; retrieval blocked by Arrhenius login availability"
+    },
+    {
+      "model": "codebert_ipc",
+      "seed": 43,
+      "status": "not_uploaded",
+      "reason": "final9762-update exports requested; retrieval blocked by Arrhenius login availability"
+    },
+    {
+      "model": "codebert_ipc",
+      "seed": 44,
+      "status": "not_uploaded",
+      "reason": "final9762-update exports requested; retrieval blocked by Arrhenius login availability"
+    },
+    {
+      "model": "codebert_joint",
+      "seed": 42,
+      "status": "not_uploaded",
+      "reason": "final9762-update exports requested; retrieval blocked by Arrhenius login availability"
+    },
+    {
+      "model": "codebert_joint",
+      "seed": 43,
+      "status": "not_uploaded",
+      "reason": "final9762-update exports requested; retrieval blocked by Arrhenius login availability"
+    },
+    {
+      "model": "codebert_joint",
+      "seed": 44,
+      "status": "not_uploaded",
+      "reason": "final9762-update exports requested; retrieval blocked by Arrhenius login availability"
+    },
+    {
+      "model": "unixcoder_ipc",
+      "seed": 42,
+      "status": "not_uploaded",
+      "reason": "final9762-update exports requested; retrieval blocked by Arrhenius login availability"
+    },
+    {
+      "model": "unixcoder_ipc",
+      "seed": 43,
+      "status": "not_uploaded",
+      "reason": "final9762-update exports requested; retrieval blocked by Arrhenius login availability"
+    },
+    {
+      "model": "unixcoder_ipc",
+      "seed": 44,
+      "status": "not_uploaded",
+      "reason": "final9762-update exports requested; retrieval blocked by Arrhenius login availability"
+    },
+    {
+      "model": "unixcoder_joint",
+      "seed": 42,
+      "status": "not_uploaded",
+      "reason": "final9762-update exports requested; retrieval blocked by Arrhenius login availability"
+    },
+    {
+      "model": "unixcoder_joint",
+      "seed": 43,
+      "status": "not_uploaded",
+      "reason": "final9762-update exports requested; retrieval blocked by Arrhenius login availability"
+    },
+    {
+      "model": "unixcoder_joint",
+      "seed": 44,
+      "status": "not_uploaded",
+      "reason": "final9762-update exports requested; retrieval blocked by Arrhenius login availability"
+    }
+  ],
+  "coverage": "rawdata and12compact evaluation checkpoints; all final predictions and training recipes tracked in Git"
+}

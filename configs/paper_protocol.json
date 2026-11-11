@@ -1,0 +1,140 @@
+{
+  "paper_title": "Source-Level Static Performance Estimation through Assembly-Supervised Learning",
+  "created": "2026-11-02",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "train_n": 309913,
+  "validation": "first2000 of original val partition",
+  "test": "first2000 of original test partition",
+  "probe_train_n": 5000,
+  "probe_indices": "data/splits/probe_train_indices.npy",
+  "ridge": {
+    "alpha": 1,
+    "fit_intercept": true,
+    "standardize_embeddings": false,
+    "target": "log1p IPC",
+    "embedding_precision": "float32",
+    "solve_precision": "float64"
+  },
+  "target": {
+    "tool": "llvm-mca",
+    "version": "18.1.8",
+    "cpu_model": "skylake",
+    "iterations": 100,
+    "interpretation": "static instruction-stream analysis label, not measured runtime"
+  },
+  "compact_training": {
+    "updates": 9762,
+    "batch_size": 256,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "clip": 0.5,
+    "warmup": 200,
+    "cosine_horizon": 10000,
+    "floor": 0.1,
+    "precision": "CUDA bf16",
+    "lambda": 5.990544826588272,
+    "temperature": 0.05,
+    "label_smoothing": 0.05
+  },
+  "pretrained_training": {
+    "created": "2026-11-08",
+    "models": [
+      "codebert",
+      "unixcoder"
+    ],
+    "conditions": [
+      "ipc",
+      "joint"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_n": 309913,
+    "updates": 9762,
+    "batch": 256,
+    "microbatch": 16,
+    "equivalent_epochs": 8.06378564306757,
+    "target": "log1p IPC",
+    "source_representation": "native tokenizer, masked-mean768; source architecture unchanged between conditions",
+    "readout": "frozen768, fixed5000 Ridge alpha1, no standardization, float32 embeddings and float64 solve",
+    "learning_rates": [
+      1e-05,
+      2e-05,
+      5e-05
+    ],
+    "alignment_weights": [
+      0.03,
+      0.16692972491610897,
+      1.0
+    ],
+    "selection": "seed42 IPC LR screen2000, top2continue9762; choosefull-budgetvalidation winner; share sourceLR withjoint. Jointweight screen2000,top2continue9762; freeze full-budgetvalidation winner. No test until final configs frozen.",
+    "screen_steps": 2000,
+    "scheduler": "200update warmup; cosine horizon10000, floor.1; identical to compact-model schedule; screen/full share same horizon for exact continuation",
+    "optimizer": "AdamW allparameters same selectedLR,weight_decay.01; globalclip.5",
+    "precision": "bf16 training, float32 alignment scores; same exact fullbatch gradient-cache implementation for both conditions",
+    "alignment": "correctedIA254 assemblyEncoder4layers256hidden->128; training-only source768->128 linearprojection; symmetric full256 InfoNCE,tau.05,label_smoothing.05",
+    "fresh_pretrained_initialization": true,
+    "resume_only_within_same_candidate": true,
+    "probe_indices_sha256": "ff62f51865a9c3e52507f2d4744ac8a8703265179030ebf5b639b83a847cf0d6",
+    "test_n": 2000,
+    "validation_n": 2000,
+    "gpu": "Arrhenius GH200",
+    "environment": "ARM Python3.13.5,PyTorch2.9.1, recorded existing Arrhenius env",
+    "preserve_historical_30min_runs": true
+  },
+  "mixed_view": {
+    "probability": 0.5,
+    "rule": "remove prefix before __attribute__((used)) marker; unavailable views unchanged",
+    "label": "original fully specified function label",
+    "historical_checkpoints_saved": false
+  },
+  "assembly_only": {
+    "historical_checkpoints_saved": false
+  },
+  "hardware": {
+    "host": "AMD EPYC9534 Zen4",
+    "test_candidates": 2346,
+    "measured": 2137,
+    "stable": 2131,
+    "repeats": 7,
+    "spread_threshold": 0.1,
+    "scope": "user-mode invocation harness and target; synthetic inputs",
+    "model_prediction_aggregation": "mean of 3 frozen source predictions for this exploratory analysis only"
+  },
+  "updated": "2026-11-10",
+  "test_scopes": {
+    "original2000": "fixed controlled sample; original record order",
+    "full17301": "all original test functions",
+    "filtered12600": "remove normalized token5gram Jaccard>=0.9 to any encoder-training function"
+  },
+  "expanded_evaluation": {
+    "date": "2026-11-09",
+    "status": "local Spearman and complete training-overlap audit finished; Berzelius allocation active, preparing GPU work",
+    "primary_evaluation": "unchanged 2000 test functions; supplement full17301",
+    "near_duplicate_rule": "whole-source alpha-normalized C lexical token 5-gram set Jaccard",
+    "thresholds": [
+      0.8,
+      0.9,
+      0.95
+    ],
+    "primary_threshold": 0.9,
+    "reference": "all309913 encoder-training functions; Ridge fitting sample is a subset",
+    "retrieval": "exact prefix-filter candidates at Jaccard>=0.8; exact hashed-shingle set intersection verifies candidates; no MinHash sampling",
+    "normalization": "remove comments and whitespace; preserve C keywords/operators; consistently rename identifiers by first occurrence in each source; abstract numeric, string and character literals",
+    "readout": "reuse existing final Ridge coefficients; do not refit or select using expanded test",
+    "metrics": [
+      "R2 log1p IPC",
+      "MAE IPC",
+      "Spearman static IPC"
+    ],
+    "efficiency": "same A100 on Berzelius; all three encoders in one job on one physical GPU GPU; all eval float32,512token cap,batch1 latency,batch16 throughput, warmup then synchronized timed repetitions; encoder+Ridge, tokenization separately; CUDA allocated/reserved peaks; no training speed comparison"
+  },
+  "historical_30min_results": "results/historical/pretrained_30min; not used for current paper comparisons"
+}

@@ -1,0 +1,14 @@
+{
+  "selection": "seed42 full9762-update validation only; LR shared by IPC-only and joint for each source encoder",
+  "models": {
+    "codebert": {
+      "lr": 5e-05,
+      "validation": 0.8595340955459271
+    },
+    "unixcoder": {
+      "lr": 5e-05,
+      "validation": 0.8661794223912935
+    }
+  },
+  "protocol_sha256": "d2b88d891483b6a4ae18aaf6e52508ca6036a0ed6df7a12f95cc8add17879467"
+}

@@ -1,0 +1,19 @@
+{
+  "fingerprint": {
+    "tokenizer_sha256": "92da63d5885cdf33090ee794abe8ace12f03c6f2110c6b9dbef208571d5771a8",
+    "train_size": 2847335079,
+    "test_size": 160633342
+  },
+  "splits": {
+    "train": {
+      "count": 309913,
+      "input_sha256": "e9d3461e61f85ca85426d0cc17fe90d62d192b91b61483e135502459e8775415",
+      "hash_scope": "full file"
+    },
+    "test": {
+      "count": 2000,
+      "input_sha256": "078b88c23036473d6bd546b057e8220d6f2456335c169fcf77ec547aefe5442a",
+      "hash_scope": "first 2000 record lines"
+    }
+  }
+}

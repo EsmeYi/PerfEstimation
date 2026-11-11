@@ -1,0 +1,56 @@
+{
+  "model": "IA",
+  "seed": 44,
+  "selection": "hyperparameters frozen from prior validation only",
+  "frozen_configs_sha256": "59c26d5cb322c6441fcd2b00a593ae1e071c27278841adcb64618ccc7a2e0c38",
+  "tuned_config": {
+    "model": "IA",
+    "trial_id": 7,
+    "target": "log1p",
+    "base_weight": 0.6,
+    "effective_lambda": 5.990544826588272,
+    "variance_calibration": 9.984241377647121,
+    "temperature": 0.05,
+    "label_smoothing": 0.05,
+    "batch_size": 256,
+    "target_steps": 9762
+  },
+  "splits_reported_separately": true,
+  "n_probe_train": 5000,
+  "tuned": {
+    "validation": {
+      "probe_r2_log1p": 0.7294502583334026,
+      "probe_r2_raw_ipc": 0.738576943242693,
+      "probe_mae_ipc": 0.2824854490203031,
+      "direct_head_r2_raw_ipc": 0.7374539733047027,
+      "n": 2000
+    },
+    "test": {
+      "probe_r2_log1p": 0.7553226778743896,
+      "probe_r2_raw_ipc": 0.7588799984186719,
+      "probe_mae_ipc": 0.28188228877898497,
+      "direct_head_r2_raw_ipc": 0.7521228523518764,
+      "n": 2000
+    }
+  },
+  "default": {
+    "validation": {
+      "probe_r2_log1p": 0.7054802162202072,
+      "probe_r2_raw_ipc": 0.7079636204713511,
+      "probe_mae_ipc": 0.3118648178989895,
+      "direct_head_r2_raw_ipc": 0.7284964989540479,
+      "n": 2000
+    },
+    "test": {
+      "probe_r2_log1p": 0.7122425821233156,
+      "probe_r2_raw_ipc": 0.7150700268242745,
+      "probe_mae_ipc": 0.3154785787756554,
+      "direct_head_r2_raw_ipc": 0.7356596175573551,
+      "n": 2000
+    }
+  },
+  "checkpoint_paths": {
+    "tuned": "/proj/berzelius-2026-145/users/x_liryi/ia_bpe_tuned_multiseed_20261027/runs/IA_seed44/checkpoint.pt",
+    "default": "/proj/berzelius-2026-145/users/x_liryi/ia_fixed_joint_ablation_20261026/ia_fixed_joint_seed44/checkpoint.pt"
+  }
+}

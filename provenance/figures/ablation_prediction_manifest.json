@@ -1,0 +1,71 @@
+{
+  "sources": [
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/source_only_seed42/ablation_test_predictions.csv",
+      "sha256": "1e7927a38a7e995cd4f4c7816bad6b0fdaa018a711514308bc87983d1f516a50"
+    },
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/source_only_seed43/ablation_test_predictions.csv",
+      "sha256": "0a8adeda0c962b845f48ff2f6c4c4c3124a7cae05c6c41be31d5c01a2f0af8d7"
+    },
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/source_only_seed44/ablation_test_predictions.csv",
+      "sha256": "20d694156b0745b48093f6450af998ec78ef686a76c36516ce00cbd529ede94e"
+    },
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/alignment_only_seed42/ablation_test_predictions.csv",
+      "sha256": "ef0f147e5639d8b43cc849aea0d0fa299213c0e5177512b48522f13b85adc67a"
+    },
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/alignment_only_seed43/ablation_test_predictions.csv",
+      "sha256": "bd0f20191fd365a831ccaf772ede855a99adf45480d6ca3933f1dae241e04c67"
+    },
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/supervision_ablations_20261027/runs/alignment_only_seed44/ablation_test_predictions.csv",
+      "sha256": "7313798428f095af5fe5cfd1ad367ee2b1228e2894c16597f806db07a7780b1a"
+    },
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed42/tuned_test_predictions.csv",
+      "sha256": "c71023091217001323d79c8d85ba8ec5b2896082453a7aa13119d8d851ce4e21"
+    },
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed43/tuned_test_predictions.csv",
+      "sha256": "143e4e3d444397ffb1d282d7597e3fbf5c17a1e9e2aad1abd96d9d95896722e8"
+    },
+    {
+      "path": "/Users/lirongy/Library/CloudStorage/OneDrive-Chalmers/Documents/New project/output/ia_bpe_tuned_multiseed_20261027/runs/IA_seed44/tuned_test_predictions.csv",
+      "sha256": "b80d3de9520a16b90295f21e95a85b47314e5572793830820cb198ae026c5f92"
+    }
+  ],
+  "models": [
+    "IPC only",
+    "Alignment only",
+    "Joint (IA)"
+  ],
+  "functions_per_seed": 2000,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "prediction_pairs_per_panel": 6000,
+  "axes": "log1p actual IPC and unmodified probe log1p prediction",
+  "axis_limits": [
+    0.0,
+    2.0
+  ],
+  "binning": "hexbin gridsize35 common extent",
+  "density": "logarithmic count, same scale in all panels",
+  "count_range": [
+    1,
+    327.0
+  ],
+  "exclusions": null,
+  "aggregation": "density counts only; no averaging predictions",
+  "uncertainty": "sample SD over individual-seed R2; no pooled R2",
+  "width_inches": 7.16,
+  "height_inches": 2.72,
+  "png_dpi": 400,
+  "matplotlib": "3.10.9",
+  "numpy": "2.4.4"
+}

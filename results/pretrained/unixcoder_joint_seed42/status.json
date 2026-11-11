@@ -1,0 +1,12 @@
+{
+  "step": 9762,
+  "stage": "full",
+  "target_steps": 9762,
+  "status": "trained",
+  "training_seconds": 8298.619461126975,
+  "peak_vram_mb": 5804.9853515625,
+  "loss": 0.13172899186611176,
+  "ipc_mse": 0.0029533389024436474,
+  "alignment": 0.7714363932609558,
+  "gradient_norm": 0.2488604038953781
+}

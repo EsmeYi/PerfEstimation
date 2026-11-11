@@ -1,0 +1,38 @@
+{
+  "created": "2026-10-28",
+  "reason": "user selected 30-minute external adaptation budget",
+  "models": [
+    "microsoft/codebert-base",
+    "microsoft/unixcoder-base"
+  ],
+  "training_seconds": 1800,
+  "gpu": "A100-SXM4-40GB",
+  "initialization": "original pretrained weights for every model, LR and seed; do not reuse fixed-update checkpoints",
+  "learning_rates": [
+    1e-05,
+    2e-05,
+    5e-05
+  ],
+  "selection": "seed42 validation probe R2 after complete 1800-second budget; never test",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "effective_batch": 256,
+  "microbatch": 16,
+  "target": "log1p IPC",
+  "loss": "unweighted MSE",
+  "warmup_updates": 200,
+  "schedule": "cosine over remaining wall time after warmup; minimum multiplier 0.1",
+  "weight_decay": 0.01,
+  "clip": 0.5,
+  "training_precision": "bf16",
+  "evaluation_precision": "float32",
+  "ridge_alpha": 1,
+  "probe_train_n": 5000,
+  "validation_n": 2000,
+  "test_n": 2000,
+  "ia_reference": "existing 9762-update final IA runs, approximately 31.5 min on A100; not exactly equal wall time",
+  "timer": "training loop wall time including periodic checkpoint IO, excludes tokenization/model load/evaluation; completes current optimizer update at threshold"
+}

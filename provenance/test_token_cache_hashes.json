@@ -1,0 +1,26 @@
+{
+  "source": {
+    "shape": [
+      2000,
+      512
+    ],
+    "dtype": "uint16",
+    "array_bytes_sha256": "4830fe5b7aa5f20e6bb1b84d7ba597f05fd21220c0c6d7c23c83edea15d654e9"
+  },
+  "IA": {
+    "shape": [
+      2000,
+      512
+    ],
+    "dtype": "uint16",
+    "array_bytes_sha256": "029eb9911d256b5e0b26870074c202c912b5f35461d947e79e2a10789878da48"
+  },
+  "BPE": {
+    "shape": [
+      2000,
+      512
+    ],
+    "dtype": "uint16",
+    "array_bytes_sha256": "d682167dc3ad316c926ad4eed9670a6035e0d8bbc75c258290a1a2eb91ef1383"
+  }
+}

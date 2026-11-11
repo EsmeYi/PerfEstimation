@@ -1,0 +1,7 @@
+{
+  "step": 1838,
+  "status": "trained",
+  "training_seconds": 1800.6322044883855,
+  "budget_seconds": 1800.0,
+  "loss": 0.009701678762212396
+}

@@ -1,0 +1,9 @@
+Fri Oct 30 11:46:40 UTC 2026
+node226
+Thread(s) per core:  2
+Model name:          AMD EPYC 9534 64-Core Processor
+CPU MHz:             2435.010
+CPU max MHz:         3718.0659
+CPU min MHz:         1500.0000
+0
+performance

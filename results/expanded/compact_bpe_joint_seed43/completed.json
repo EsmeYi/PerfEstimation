@@ -1,0 +1,11 @@
+{
+  "condition": "compact_bpe_joint",
+  "seed": 43,
+  "test_n": 17301,
+  "checkpoint": "/proj/berzelius-2026-145/users/x_liryi/revision_eval_20261109/ipc-replication/checkpoints/BPE_seed43.pt",
+  "source_readout": "reconstructed original fixed5k Ridge; no new labels",
+  "original2k_max_abs_log_prediction_difference": 0.0,
+  "precision": "float32 encoder; float64 Ridge",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "torch": "2.5.1"
+}

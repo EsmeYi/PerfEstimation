@@ -1,0 +1,6 @@
+{
+  "model": "microsoft/unixcoder-base",
+  "commit": "5604afdc964f6c53782a6813140ade5216b99006",
+  "tokenizer": "native",
+  "representation": "masked mean 768"
+}

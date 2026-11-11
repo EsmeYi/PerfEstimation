@@ -1,0 +1,18 @@
+{
+  "models": {
+    "codebert": {
+      "lr": 5e-05,
+      "slot": 0,
+      "alignment_weight": 0.03,
+      "validation": 0.8619305848098806
+    },
+    "unixcoder": {
+      "lr": 5e-05,
+      "slot": 1,
+      "alignment_weight": 0.16692972491610897,
+      "validation": 0.8841025769746207
+    }
+  },
+  "selection": "seed42 full9762-update validation only; frozen before all final test evaluation",
+  "protocol_sha256": "d2b88d891483b6a4ae18aaf6e52508ca6036a0ed6df7a12f95cc8add17879467"
+}

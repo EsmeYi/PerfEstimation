@@ -1,0 +1,20 @@
+{
+  "model": "microsoft/unixcoder-base",
+  "seed": 43,
+  "lr": 5e-05,
+  "budget_seconds": 1800.0,
+  "timer": "training wall time incl periodic checkpoints; excludes model loading, tokenization and evaluation",
+  "effective_batch": 256,
+  "microbatch": 16,
+  "target": "log1p IPC",
+  "loss": "unweighted MSE",
+  "pooling": "masked mean, full 768 dimensions",
+  "warmup": 200,
+  "scheduler": "cosine over remaining wall time after 200-update warmup; floor 0.1",
+  "clip": 0.5,
+  "weight_decay": 0.01,
+  "source_parameters": 125339136,
+  "assembly_used": false,
+  "evaluation_precision": "float32",
+  "plan_sha256": "9fdf7135778a0cd554efcb55e0b7ca37e7d1e5a990bd5ef2cead05e29513cb59"
+}

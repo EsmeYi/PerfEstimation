@@ -1,0 +1,48 @@
+{
+  "created": "2026-11-08",
+  "models": [
+    "codebert",
+    "unixcoder"
+  ],
+  "conditions": [
+    "ipc",
+    "joint"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "train_n": 309913,
+  "updates": 9762,
+  "batch": 256,
+  "microbatch": 16,
+  "equivalent_epochs": 8.06378564306757,
+  "target": "log1p IPC",
+  "source_representation": "native tokenizer, masked-mean768; source architecture unchanged between conditions",
+  "readout": "frozen768, fixed5000 Ridge alpha1, no standardization, float32 embeddings and float64 solve",
+  "learning_rates": [
+    1e-05,
+    2e-05,
+    5e-05
+  ],
+  "alignment_weights": [
+    0.03,
+    0.16692972491610897,
+    1.0
+  ],
+  "selection": "seed42 IPC LR screen2000, top2continue9762; choosefull-budgetvalidation winner; share sourceLR withjoint. Jointweight screen2000,top2continue9762; freeze full-budgetvalidation winner. No test until final configs frozen.",
+  "screen_steps": 2000,
+  "scheduler": "200update warmup; cosine horizon10000, floor.1; identical to compact-model schedule; screen/full share same horizon for exact continuation",
+  "optimizer": "AdamW allparameters same selectedLR,weight_decay.01; globalclip.5",
+  "precision": "bf16 training, float32 alignment scores; same exact fullbatch gradient-cache implementation for both conditions",
+  "alignment": "correctedIA254 assemblyEncoder4layers256hidden->128; training-only source768->128 linearprojection; symmetric full256 InfoNCE,tau.05,label_smoothing.05",
+  "fresh_pretrained_initialization": true,
+  "resume_only_within_same_candidate": true,
+  "probe_indices_sha256": "ff62f51865a9c3e52507f2d4744ac8a8703265179030ebf5b639b83a847cf0d6",
+  "test_n": 2000,
+  "validation_n": 2000,
+  "gpu": "Arrhenius GH200",
+  "environment": "ARM Python3.13.5,PyTorch2.9.1, recorded existing Arrhenius env",
+  "preserve_historical_30min_runs": true
+}

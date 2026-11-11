@@ -1,0 +1,26 @@
+{
+  "codebert": [
+    {
+      "slot": 0,
+      "alignment_weight": 0.03,
+      "validation": 0.8194901329040003
+    },
+    {
+      "slot": 1,
+      "alignment_weight": 0.16692972491610897,
+      "validation": 0.8068166037344942
+    }
+  ],
+  "unixcoder": [
+    {
+      "slot": 0,
+      "alignment_weight": 0.03,
+      "validation": 0.8427740466818645
+    },
+    {
+      "slot": 1,
+      "alignment_weight": 0.16692972491610897,
+      "validation": 0.8400333511825999
+    }
+  ]
+}

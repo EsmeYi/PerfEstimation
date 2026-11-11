@@ -1,0 +1,70 @@
+[
+  {
+    "file": "source_ipc_baseline_20261025/archive/Experiment/prepare.py",
+    "change": "Resolve experiment root and tokenizer cache relative to package instead of author paths; numerical algorithm unchanged."
+  },
+  {
+    "file": "ia_bpe_tuned_multiseed_20261027/train_fixed.py",
+    "change": "Resolve experiment root and tokenizer cache relative to package instead of author paths; numerical algorithm unchanged."
+  },
+  {
+    "file": "ia_bpe_validation_search_20261026/train_search.py",
+    "change": "Resolve experiment root and tokenizer cache relative to package instead of author paths; numerical algorithm unchanged."
+  },
+  {
+    "file": "supervision_ablations_20261027/train.py",
+    "change": "Resolve experiment root and tokenizer cache relative to package instead of author paths; numerical algorithm unchanged."
+  },
+  {
+    "file": "pretrained_ipc_30min_20261028/experiment.py",
+    "change": "Resolve experiment root and tokenizer cache relative to package instead of author paths; numerical algorithm unchanged."
+  },
+  {
+    "file": "ipc_validation_20261030/speed_robustness.py",
+    "change": "Resolve experiment root and tokenizer cache relative to package instead of author paths; numerical algorithm unchanged."
+  },
+  {
+    "file": "ipc_validation_20261030/aug_prepare.py",
+    "change": "Resolve experiment root and tokenizer cache relative to package instead of author paths; numerical algorithm unchanged."
+  },
+  {
+    "file": "ipc_validation_20261030/asm_only_train.py",
+    "change": "Resolve experiment root and tokenizer cache relative to package instead of author paths; numerical algorithm unchanged."
+  },
+  {
+    "file": "ipc_validation_20261030/aug_train.py",
+    "change": "Resolve experiment root and tokenizer cache relative to package instead of author paths; numerical algorithm unchanged."
+  },
+  {
+    "file": "ipc_validation_20261030/hw_prepare.py",
+    "change": "Resolve experiment root and tokenizer cache relative to package instead of author paths; numerical algorithm unchanged."
+  },
+  {
+    "file": "ipc_validation_20261030/hw_analyze.py",
+    "change": "Resolve experiment root and tokenizer cache relative to package instead of author paths; numerical algorithm unchanged."
+  },
+  {
+    "file": "ipc_validation_20261030/prepare.py",
+    "change": "Resolve experiment root and tokenizer cache relative to package instead of author paths; numerical algorithm unchanged."
+  },
+  {
+    "file": "ipc_validation_20261030/aug_train.py",
+    "change": "Save final weights and per-example predictions after training/evaluation; loss, sampling, optimizer, schedule, and scoring unchanged."
+  },
+  {
+    "file": "ipc_validation_20261030/asm_only_train.py",
+    "change": "Save final trained weights in addition to historical metrics/predictions; numerical training unchanged."
+  },
+  {
+    "file": "pretrained_ipc_20261027/prepare_original.py",
+    "change": "Retain the original native tokenizer/model preparation function only; omit superseded fixed-step training entry point."
+  },
+  {
+    "file": "pretrained_ipc_20261027/prepare_original.py",
+    "change": "Use archived native tokenizer metadata and recorded initialization commit; add offline tokenize-only option. Native sequence formatting unchanged."
+  },
+  {
+    "file": "ipc_validation_20261030/hw_analyze.py",
+    "change": "Respect LLVM_BIN environment override for analysis subprocesses."
+  }
+]
