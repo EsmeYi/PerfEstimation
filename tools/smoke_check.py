@@ -14,3 +14,13 @@ tk=Tokenizer.from_file(str(P/'data/tokenizers/bpe_tokenizer.json'));assert tk.ge
 ix=np.load(P/'data/splits/probe_train_indices.npy');assert len(ix)==len(set(ix.tolist()))==5000
 assert len(json.loads((P/'data/splits/test_ids.json').read_text()))==2000
 print('PASS: tokenizer checks, encoder parameter count/forward, frozen BPE vocabulary and split identities.')
+
+# Both modern tokenizer.json and legacy RobertaTokenizer assets must encode identically.
+from transformers import RobertaTokenizer
+for name in ['codebert','unixcoder']:
+ folder=P/'data/pretrained_metadata'/name
+ native=RobertaTokenizer.from_pretrained(folder,local_files_only=True)
+ archived=Tokenizer.from_file(str(folder/'tokenizer.json'))
+ for text in ['int f() {return 1;}', '/* unicode */\nfloat *a = p + 0x10;']:
+  assert native.encode(text)==archived.encode(text).ids
+print('PASS: offline CodeBERT/UniXcoder tokenizer compatibility.')

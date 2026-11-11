@@ -11,7 +11,7 @@ Completed checks for this snapshot:
 - Tokenizer normalization and complete prefix-retrieval logic checked, including exhaustive small-universe retrieval cases.
 - Current manuscript compiled successfully:10pages including references; body ends within9pages.
 
-Local CPU smoke checks also passed: 14 tokenizer regression cases, the compact encoder forward pass/parameter count, and frozen vocabulary/probe identities. Seven unit tests cover metric conventions and archive-installation guards.
+Local CPU smoke checks also passed: 14 tokenizer regression cases, the compact encoder forward pass/parameter count, and frozen vocabulary/probe identities. Offline native CodeBERT/UniXcoder tokenizers match their archived token IDs. A two-example IA frozen-model CPU replay agreed within 3e-7 in transformed predictions. Seven unit tests cover metric conventions and archive-installation guards.
 
 The repository CI verifies package integrity, standard-library metric behavior, archive installation guards, syntax, and the full offline result reconstruction. It does not claim new full GPU retraining or universal hardware portability.
 

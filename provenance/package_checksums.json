@@ -59,6 +59,10 @@
     "bytes": 692,
     "sha256": "dc4df57c83c0f9926f7ce3ce40029ddd02292eed991f21c3e4d9df7d0c2605b7"
   },
+  "data/pretrained_metadata/codebert/merges.txt": {
+    "bytes": 456318,
+    "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5"
+  },
   "data/pretrained_metadata/codebert/tokenizer.json": {
     "bytes": 3558648,
     "sha256": "ca59632112d18bffd237dbfa1f5b5c35d92b30d0587165e473cea7f763d4ad62"
@@ -67,9 +71,17 @@
     "bytes": 388,
     "sha256": "aa6a8a3f069d2d98c09444ee3f9671d64c29ce647473dccd78169b10c490d359"
   },
+  "data/pretrained_metadata/codebert/vocab.json": {
+    "bytes": 898823,
+    "sha256": "deaaaa2bb580e21395f18f8ae38e8ebd2985d1c5da170ce562d2866c16902d1b"
+  },
   "data/pretrained_metadata/unixcoder/config.json": {
     "bytes": 770,
     "sha256": "eeb46583a8819ddb0d588187416b08dcfecbef0278ff665b37807bac2893ec69"
+  },
+  "data/pretrained_metadata/unixcoder/merges.txt": {
+    "bytes": 444183,
+    "sha256": "3b84414c9f8804a621da0fd4bfe77104ef536c350baaaf3c99003356b0cc85f4"
   },
   "data/pretrained_metadata/unixcoder/tokenizer.json": {
     "bytes": 3579572,
@@ -78,6 +90,10 @@
   "data/pretrained_metadata/unixcoder/tokenizer_config.json": {
     "bytes": 416,
     "sha256": "1ae26e80acf5f55f42c143fbdfd72ecbd955e26398f16874a84c080b640a57cc"
+  },
+  "data/pretrained_metadata/unixcoder/vocab.json": {
+    "bytes": 937653,
+    "sha256": "de602a2e363b9ca3925ab5b35a0b685822cf5ade64a5c342c140a4ee28819e13"
   },
   "data/splits/probe_train_indices.npy": {
     "bytes": 40128,
@@ -120,16 +136,16 @@
     "sha256": "5251a73e22d3723babd84618570bc611ce1a95cb6ba37127db299a38563f4532"
   },
   "docs/REPRODUCING.md": {
-    "bytes": 9060,
-    "sha256": "468dcfa21f5cf9c379ad18e1b3af791ae31ef79d1dd26c7cc73fdea773b181af"
+    "bytes": 9250,
+    "sha256": "0d7cd467e1e746eae7e5ffe56117fe7e00e5cdac7a7ec3cdbb861c34d1009df2"
   },
   "docs/RESULT_MAP.md": {
     "bytes": 2125,
     "sha256": "2dbfc95a1b6879713c049bbb87885a790f50f2d40d32eaa5aacd9ebcfc3a2dee"
   },
   "docs/VALIDATION.md": {
-    "bytes": 1889,
-    "sha256": "0a9e5e7ca87c82ed36f943107c488a34732838375845f7784be2037bca543486"
+    "bytes": 2054,
+    "sha256": "2933cee99831ee9edefdd167f75beabef13516e4be0759c14efe2e139d4e58f0"
   },
   "environment/arrhenius-freeze.txt": {
     "bytes": 16513,
@@ -1732,8 +1748,8 @@
     "sha256": "5568c734fe6a43ee2a7dcd3e13964fa472e6df0d5f0a01be77a5b45c879a6eee"
   },
   "tools/smoke_check.py": {
-    "bytes": 1257,
-    "sha256": "864c18a603bb65d065cacc390ec8d2dd5ee0cb2bad594815b79376598a76aedc"
+    "bytes": 1800,
+    "sha256": "7f66c365e2f0215238d62a66fa47789b83159308e76102d2025bdb8a0e901487"
   },
   "tools/validate_tokenization.py": {
     "bytes": 1446,

@@ -93,7 +93,7 @@ Prepare native token caches and download the pinned original public initializati
 python tools/prepare_pretrained.py
 ```
 
-Original public commits are recorded under `provenance/pretrained_initialization/`; model configs and native tokenizers are archived. Initialization acquisition requires network access and PyTorch>=2.6 when loading upstream PyTorch binary weights. The supplied2.9.1 environment supports this route. `--tokenize-only` skips initialization downloads for offline evaluation/cache preparation.
+Original public commits are recorded under `provenance/pretrained_initialization/`; model configs and native tokenizers are archived. Legacy `vocab.json`/`merges.txt` are losslessly derived from each archived `tokenizer.json` for compatibility with older Transformers versions; offline smoke checks compare their token IDs. Initialization acquisition requires network access and PyTorch>=2.6 when loading upstream PyTorch binary weights. The supplied2.9.1 environment supports this route. `--tokenize-only` skips initialization downloads for offline evaluation/cache preparation.
 
 ```bash
 python tools/run_experiment.py pretrained --index 0 --dry-run
